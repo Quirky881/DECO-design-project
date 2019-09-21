@@ -1,12 +1,12 @@
 <!doctype html>
 <html>
   <?php include("header.php"); ?>
-  
+  <link rel="stylesheet" href="styles.css">
   <form id="filter" method="get">
     <p>
-      <input id="filter-text" name="title" type="text"
-        placeholder="Filter by Title" value="">
-      <em>(Case-sensitive)</em>
+      <input id="filter-text" name="Language" type="text"
+        placeholder="Filter by Language" value="">
+      <em>(Case-sensitive) use Yugara, Yugarabul, Yugambeh or Turubul</em>
     </p>
     <p id="filter-count">
       <strong><?php echo $count; ?></strong> records displayed.
@@ -17,8 +17,8 @@
   error_reporting(E_ALL ^ E_NOTICE);
   // Get filter form value from URL
   $filter = "";
-  if(isset($_GET['title']) && $_GET['title'] != "") {
-    $filter = $_GET['title'];
+  if(isset($_GET['Language']) && $_GET['Language'] != "") {
+    $filter = $_GET['Language'];
   }
 
   $count = 0;
@@ -39,17 +39,20 @@
   echo "Connected successfully"."<br>";
 
   if($filter) {
-    $sql = "SELECT word, english_meaning FROM Words WHERE language =".$filter;
+    $sql = "SELECT word, english_meaning FROM Words WHERE language ="."'".$filter."'";
   } else  {
     $sql = "SELECT word, english_meaning FROM Words";
   }
+  echo $sql."<br>";
   $result = $conn->query($sql);
   $count = $result->num_rows;
   if ($result->num_rows > 0) {
     // output data of each row
+    echo "<table style = 'width:90%'><tr><th>Word</th><th>Meaning</th></tr>";
     while($row = $result->fetch_assoc()) {
-      echo "Word: " . $row["word"]. " - Meaning: " . $row["english_meaning"]."<br>";
+      echo "<tr><td>" . $row["word"]. "</td><td>" . $row["english_meaning"]."</td></tr>";
     }
+    echo "</table>";
   } else {
       echo "0 results";
     }
