@@ -1,7 +1,6 @@
 <!doctype html>
 <html>
   <?php include("header.php"); ?>
-  <link rel="stylesheet" href="styles.css">
   <form id="filter" method="get">
     <p>
       <input id="filter-text" name="Language" type="text"
@@ -48,7 +47,7 @@
   $count = $result->num_rows;
   if ($result->num_rows > 0) {
     // output data of each row
-    echo "<table style = 'width:90%'><tr><th>Word</th><th>Meaning</th></tr>";
+    echo "<table style = 'width:90%;text-align: center;'><tr><th>Word</th><th>Meaning</th></tr>";
     while($row = $result->fetch_assoc()) {
       echo "<tr><td>" . $row["word"]. "</td><td>" . $row["english_meaning"]."</td></tr>";
     }

@@ -264,3 +264,17 @@ margin: 10%;
 
 
 /* storyEntry */
+
+
+/* Dictionary entry */
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+}
+th, td {
+  padding: 15px;
+}
+
+/* Dictionary entry */
