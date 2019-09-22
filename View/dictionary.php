@@ -47,11 +47,11 @@
   $count = $result->num_rows;
   if ($result->num_rows > 0) {
     // output data of each row
-    echo "<table style = 'width:90%;text-align: center;'><tr><th>Word</th><th>Meaning</th></tr>";
+    echo "<div style='text-align:center;'><table style = 'width:90%;text-align: center;'><tr><th>Word</th><th>Meaning</th></tr>";
     while($row = $result->fetch_assoc()) {
       echo "<tr><td>" . $row["word"]. "</td><td>" . $row["english_meaning"]."</td></tr>";
     }
-    echo "</table>";
+    echo "</table></div>";
   } else {
       echo "0 results";
     }
