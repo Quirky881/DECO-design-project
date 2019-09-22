@@ -1,0 +1,280 @@
+body {
+  overflow:hidden;
+	margin:0;
+	padding:0;
+	font-size: 18px;
+}
+
+.row {
+  min-height: 100px;
+}
+
+.main {
+  margin-top: 5%;
+}
+
+header.container-fluid {
+  padding: 0;
+  margin: 0;
+  background-color: White;
+  color: black;
+  border: solid black 1px;
+}
+
+.active span {
+  font-style: oblique;
+  font-weight: bold;
+}
+
+.blank {
+  padding: 0;
+  margin: 0;
+}
+
+div.navbar {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+.navImg {
+  max-height: 60%;
+  max-width: 60%;
+}
+
+.navImgText {
+  max-height: 20%;
+  max-width: 20%;
+}
+
+#navicon {
+  margin: 0;
+  padding: 0;
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  overflow: hidden;
+  height: 100%;
+}
+
+#navicon:hover {
+  background-color: lightgrey;
+  color: white;
+}
+
+form {
+  align-self: center;
+  text-align: center;
+}
+
+#signinForm {
+  padding: 2%;
+  margin: 2%;
+  background-color: #f9f9d2;
+  border-radius: 10px;
+}
+
+.btn {
+  background-color: #daf1da;
+  border-color: #daf1da;
+}
+
+footer {
+  width: 100%;
+  height: 40px;
+  background-color: black;
+  color: white;
+  overflow: hidden;
+  bottom: 0;
+  position: fixed;
+}
+
+
+
+/***************************Story book*********************************/
+
+#exit{
+	float: right;
+	margin: 3% 10% 0 0;
+}
+
+
+
+.flipbook-viewport{
+	overflow: hidden;
+	width:100%;
+	height:100%;
+}
+
+.flipbook-viewport .container{
+	position:absolute;
+	top:11%;
+	left:11%;
+	margin:auto;
+}
+
+.flipbook-viewport .page{
+	background-color:rgb(247, 236, 202);
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+}
+
+/* .flipbook .page{
+	width:400px;
+	height:600px;
+	} */
+
+.flipbook .page{
+	-webkit-box-shadow:0 0 20px rgba(0,0,0,0.2);
+	-moz-box-shadow:0 0 20px rgba(0,0,0,0.2);
+	-ms-box-shadow:0 0 20px rgba(0,0,0,0.2);
+	-o-box-shadow:0 0 20px rgba(0,0,0,0.2);
+	box-shadow:0 0 20px rgba(0,0,0,0.2);
+}
+
+.flipbook .title h2{
+margin: 10%;
+}
+
+/* .flipbook-viewport .page img{
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	margin:0;
+} */
+
+.flipbook-viewport .shadow{
+	-webkit-transition: -webkit-box-shadow 0.5s;
+	-moz-transition: -moz-box-shadow 0.5s;
+	-o-transition: -webkit-box-shadow 0.5s;
+	-ms-transition: -ms-box-shadow 0.5s;
+
+	-webkit-box-shadow:0 0 20px #ccc;
+	-moz-box-shadow:0 0 20px #ccc;
+	-o-box-shadow:0 0 20px #ccc;
+	-ms-box-shadow:0 0 20px #ccc;
+	box-shadow:0 0 20px #ccc;
+}
+
+.onpage{
+	line-height: 250%;
+	letter-spacing: 1px;
+	display:inline-block;
+}
+
+.padding-style{
+	padding:50px;
+}
+
+/* .onpage p{
+	margin:10%;
+
+} */
+
+
+/*--------------------------------------- fliper card ------------------------------------------*/
+/* add 3D effects*/
+.flip-container {
+    perspective: 10000;
+}
+
+/* 鼠标放上去的时候翻转 */
+.flip-container:hover .flipper {
+    transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back {
+    width: 7em;
+    height:5em;
+	border-radius: 1em;
+}
+
+
+
+.flipper img{
+	border-radius: 1em;
+	width: 100%;
+	height: 100%;
+}
+
+/* 翻转速度设置 */
+.flipper {
+    transition: 1s;
+    transform-style: preserve-3d;
+
+    position: relative;
+}
+
+/* 翻转页的时候隐藏背面 */
+.front, .back {
+    backface-visibility: hidden;
+    position: absolute;
+}
+
+
+
+
+/* 背面初始的时候隐藏 */
+.back {
+    transform: rotateY(180deg);
+    background: white;
+    opacity: 0.7;
+    /* padding: 1em; */
+    /* width: 10em;
+	height:7em; */
+
+
+}
+
+
+/* 前面板放在上面 */
+.front {
+
+    /* for firefox 31 */
+    transform: rotateY(0deg);
+}
+
+/* position the container of the flip box */
+.flip-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+#back-img{
+	border-radius: 1em;
+	width: 50%;
+	height: 50%;
+
+}
+.eng-meaning{
+	font-size: 12px;
+}
+
+.abori-word{
+	line-height: 1;
+
+}
+
+
+/* storyEntry */
+
+
+/* Dictionary entry */
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+}
+th, td {
+  padding: 15px;
+}
+
+/* Dictionary entry */

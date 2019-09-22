@@ -7,9 +7,6 @@
         placeholder="Filter by Language" value="">
       <em>(Case-sensitive) use Yugara, Yugarabul, Yugambeh or Turubul</em>
     </p>
-    <p id="filter-count">
-      <strong><?php echo $count; ?></strong> records displayed.
-    </p>
   </form>
 
   <?php
@@ -35,23 +32,23 @@
   if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
   }
-  echo "Connected successfully"."<br>";
+  //echo "Connected successfully"."<br>";
 
   if($filter) {
     $sql = "SELECT word, english_meaning FROM Words WHERE language ="."'".$filter."'";
   } else  {
     $sql = "SELECT word, english_meaning FROM Words";
   }
-  echo $sql."<br>";
+  //echo $sql."<br>";
   $result = $conn->query($sql);
   $count = $result->num_rows;
   if ($result->num_rows > 0) {
     // output data of each row
-    echo "<div style='text-align:center;'><table style = 'width:90%;text-align: center;'><tr><th>Word</th><th>Meaning</th></tr>";
+    echo "<div style='text-align:center;'><table class = 'fixed_header' ,style = 'width:90%;text-align: center;'><thead><tr><th>Word</th><th>Meaning</th></tr></thead><tbody>";
     while($row = $result->fetch_assoc()) {
       echo "<tr><td>" . $row["word"]. "</td><td>" . $row["english_meaning"]."</td></tr>";
     }
-    echo "</table></div>";
+    echo "</tbody></table></div>";
   } else {
       echo "0 results";
     }
