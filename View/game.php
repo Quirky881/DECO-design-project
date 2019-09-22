@@ -20,12 +20,12 @@
   if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
   }
-  echo "Connected successfully"."<br>";
+  //echo "Connected successfully"."<br>";
 
   
   $sql = "SELECT word, english_meaning FROM Words WHERE language IN " . $languages . "AND english_meaning IN ('" . $subjects[0] . "','" . $subjects[1] . "','" .$subjects[2] . "') ORDER BY word ASC";
  
-  echo $sql."<br>";
+  //echo $sql."<br>";
   $result = $conn->query($sql);
   if ($result->num_rows > 0) {
     // output data of each row
@@ -36,7 +36,7 @@
   } else {
       echo "eooro 0 results";
     }
-  echo $output;
+  //echo $output;
   $conn->close();
 
   //variables needed later
@@ -92,15 +92,15 @@
     <style>
         .divClass {
             border: 3px solid black;
-            font-size: 25px;
+            font-size: 45px;
             background-color: lightgray;
-            width: 250px;
+            width: 20%;
             padding: 5px;
             display: inline-table;
         }
 
         li {
-            font-size: 20px;
+            font-size: 30px;
         }
     </style>
   <body style="font-family: Arial">
@@ -127,6 +127,5 @@
           <ul id='<?php echo $subjects[2];?>'></ul>
         </div>
     </form>
-  <?php echo $output; ?>
   <?php include("footer.php"); ?>
 </html>

@@ -9,6 +9,37 @@
     </p>
   </form>
 
+  <style>
+  .fixed_header{
+      width: 80%;
+      table-layout: fixed;
+      border-collapse: collapse;
+      align:center:
+    }
+
+    .fixed_header tbody{
+      display:block;
+      width: 100%;
+      overflow: auto;
+      height: 500px;  
+    }
+
+    .fixed_header thead tr {
+      display: block;
+    }
+
+    .fixed_header thead {
+      background: black;
+      color:#fff;
+    }
+
+    .fixed_header th, .fixed_header td {
+      padding: 5px;
+      text-align: left;
+      width: 200px;
+    }
+  </style>
+
   <?php
   error_reporting(E_ALL ^ E_NOTICE);
   // Get filter form value from URL
@@ -44,7 +75,7 @@
   $count = $result->num_rows;
   if ($result->num_rows > 0) {
     // output data of each row
-    echo "<div style='text-align:center;'><table class = 'fixed_header' ,style = 'width:90%;text-align: center;'><thead><tr><th>Word</th><th>Meaning</th></tr></thead><tbody>";
+    echo "<div><table class = 'fixed_header' ,style = 'width:90%;text-align: center;'><thead><tr><th>Word</th><th>Meaning</th></tr></thead><tbody>";
     while($row = $result->fetch_assoc()) {
       echo "<tr><td>" . $row["word"]. "</td><td>" . $row["english_meaning"]."</td></tr>";
     }
