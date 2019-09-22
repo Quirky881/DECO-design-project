@@ -32,12 +32,18 @@
       background: black;
       color:#fff;
     }
+    .fixed_header <tbody></tbody> {
+      background: white;
+      color:black;
+      background-image:none;
+    }
 
     .fixed_header th, .fixed_header td {
       padding: 5px;
       text-align: left;
       width: 200px;
     }
+
   </style>
 
   <?php
@@ -66,18 +72,18 @@
   //echo "Connected successfully"."<br>";
 
   if($filter) {
-    $sql = "SELECT word, english_meaning FROM Words WHERE language ="."'".$filter."'";
+    $sql = "SELECT word, english_meaning, language FROM Words WHERE language ="."'".$filter."'";
   } else  {
-    $sql = "SELECT word, english_meaning FROM Words";
+    $sql = "SELECT word, english_meaning, language FROM Words";
   }
   //echo $sql."<br>";
   $result = $conn->query($sql);
   $count = $result->num_rows;
   if ($result->num_rows > 0) {
     // output data of each row
-    echo "<div><table class = 'fixed_header' ,style = 'width:90%;text-align: center;'><thead><tr><th>Word</th><th>Meaning</th></tr></thead><tbody>";
+    echo "<div><table class = 'fixed_header' ,style = 'width:90%;text-align: center;'><thead><tr><th>Word</th><th>Meaning</th><th>Language</th></tr></thead><tbody>";
     while($row = $result->fetch_assoc()) {
-      echo "<tr><td>" . $row["word"]. "</td><td>" . $row["english_meaning"]."</td></tr>";
+      echo "<tr><td>" . $row["word"]. "</td><td>" . $row["english_meaning"]."</td>"."<td>" . $row["language"]."</td></tr>";
     }
     echo "</tbody></table></div>";
   } else {
