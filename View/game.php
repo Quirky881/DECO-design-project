@@ -102,28 +102,47 @@
         li {
             font-size: 30px;
         }
+        a , figcaption{
+          font-size: 5px;
+          padding:1px;
+        }
+        img{
+          padding:1px;
+        }
     </style>
   <body style="font-family: Arial">
     <form id="form1" runat="server">
         <div class="divClass">
-            Words for Anmimals
+            Mystery words
                 <ul id="source">
                   <?php echo  $output;?>
                 </ul>
         </div>
 
         <div class="divClass" id='div<?php echo $subjects[0];?>'>
-          <?php echo $subjects[0]?>
+          <?php echo $subjects[0]?><br>
+          <figure>
+            <img src="../View/Images/Koala.jpg" alt = "Koala"><br>
+            <figcaption>https://www.flickr.com/photos/98119192@N05/9212325177</figcaption>
+          </figure> 
           <ul id='<?php echo $subjects[0];?>'></ul>
         </div>
 
         <div class="divClass" id='div<?php echo $subjects[1];?>'>
-          <?php echo $subjects[1]?>
+          <?php echo $subjects[1]?><br>
+          <figure>
+            <img src="../View/Images/Kangaroo.jpg" alt = "Kangaroo"><br>
+            <figcaption>https://www.flickr.com/photos/ysc/2179798100/</figcaption>
+          </figure>
           <ul id='<?php echo $subjects[1];?>'></ul>
         </div>
 
         <div class="divClass" id='div<?php echo $subjects[2];?>'>
-          <?php echo $subjects[2]?>
+          <?php echo $subjects[2]?><br>
+          <figure>
+            <img src="../View/Images/Shark.jpg" alt = "Shark"><br>
+            <figcaption>https://www.flickr.com/photos/skymind25/79609238</figcaption>
+          </figure>
           <ul id='<?php echo $subjects[2];?>'></ul>
         </div>
     </form>
