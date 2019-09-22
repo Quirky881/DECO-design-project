@@ -5,16 +5,17 @@
     <p>
       <input id="filter-text" name="Language" type="text"
         placeholder="Filter by Language" value="">
-      <em>(Case-sensitive) use Yugara, Yugarabul, Yugambeh or Turubul</em>
+      <em style = " background: white">(Case-sensitive) use Yugara, Yugarabul, Yugambeh or Turubul</em>
     </p>
   </form>
 
   <style>
-  .fixed_header{
-      width: 80%;
-      table-layout: fixed;
+    .fixed_header{
+      width:70%; 
+      margin-left:15%; 
+      margin-right:15%;
+      table-layout: auto;
       border-collapse: collapse;
-      align:center:
     }
 
     .fixed_header tbody{
@@ -39,9 +40,8 @@
     }
 
     .fixed_header th, .fixed_header td {
-      padding: 5px;
       text-align: left;
-      width: 200px;
+      width: 300px;
     }
 
   </style>
@@ -81,7 +81,7 @@
   $count = $result->num_rows;
   if ($result->num_rows > 0) {
     // output data of each row
-    echo "<div><table class = 'fixed_header' ,style = 'width:90%;text-align: center;'><thead><tr><th>Word</th><th>Meaning</th><th>Language</th></tr></thead><tbody>";
+    echo "<div><table class = 'fixed_header' ,style = 'width:90%;text-align: center;align = 'center';><thead><tr><th>Word</th><th>Meaning</th><th>Language</th></tr></thead><tbody>";
     while($row = $result->fetch_assoc()) {
       echo "<tr><td>" . $row["word"]. "</td><td>" . $row["english_meaning"]."</td>"."<td>" . $row["language"]."</td></tr>";
     }
