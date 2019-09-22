@@ -102,7 +102,7 @@
         li {
             font-size: 30px;
         }
-        a , figcaption{
+        figcaption{
           font-size: 5px;
           padding:1px;
         }
