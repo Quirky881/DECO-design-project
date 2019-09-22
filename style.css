@@ -1,0 +1,178 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.top-nav {
+    display: flex;
+    background: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0 0 0;
+    border-bottom: 2px solid black;
+}
+
+a {
+    text-decoration: none;
+}
+
+.homepage {
+    cursor: pointer;
+    margin-right: 20px;
+    border-left: 2px solid black;
+}
+
+.story {
+    padding: 10px;
+    transition: all 0.3s ease 0s;
+}
+
+.story:hover {
+    color: lightcoral;
+}
+
+.gamepage {
+    padding-left: 60px;
+}
+
+.game {
+    padding-left: 20px;
+    transition: all 0.3s ease 0s;
+}
+
+.game:hover {
+    color: lightcoral;
+}
+
+.dictionarypage {
+    padding-left: 60px;
+}
+
+.dictionary {
+    padding-left: 20px;
+}
+
+.dictionary:hover {
+    color: lightcoral;
+}
+
+.acc {
+    margin-left: 100px;
+    padding-left: 20px;
+    border-left: 2px solid black;
+}
+
+input {
+    padding: 10px;
+    size: 2em;
+}
+
+.sign-in {
+    display: inline-block;
+    color: white;
+    background: #4caf50;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    padding: 28px 38px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.sign-in:hover {
+    background: darkgreen;
+    transition: 1s;
+}
+
+.drop {
+    background: lightgreen;
+    padding: 22px 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    visibility: hidden;
+    position: absolute;
+}
+
+.dropdown:hover .drop {
+    visibility: visible;
+    opacity: 0.8;
+}
+
+.sign-up {
+    display: inline-block;
+    background: #ff4800;
+    padding: 28px 38px;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.sign-up:hover {
+    background: hsla(0, 97%, 46%, 0.877);
+    transition: 1s;
+}
+
+select {
+    display: inline-block;
+    padding: 20px 30px;
+    margin-left: 40px;
+    border-top: none;
+    border-bottom: none;
+    font-size: 20px;
+}
+
+.team {
+    display: inline-block;
+    font-size: 20px;
+    margin-left: 40px;
+    background: deeppink;
+    padding: 20px 30px;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border: none;
+    border-radius: 6px;
+}
+
+.help {
+    margin-left: 40px;
+    border-right: 2px solid black;
+}
+
+.team:hover {
+    background: hotpink;
+    color: black;
+    transition: 1s;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.content {
+    background-image: url(images/backgroundimg.jpg);
+    padding-top: 90px;
+    margin-top: 10px;
+    background-size: 100em;
+    background-repeat: no-repeat;
+}
+
+footer {
+    background-image: url(images/footerimg.jpg);
+    padding-bottom: 370px;
+    margin-top: 500px;
+    background-repeat: no-repeat;
+}
+
+.animation {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.indigenous {
+    background-image: url(images/select.jpg);
+    size: 4em;
+}
