@@ -42,19 +42,24 @@
   //variables needed later
   $divOne = '#div'.$subjects[0];
   $divTwo = '#div'.$subjects[1];
+  $divThree = '#div'.$subjects[2];
   $liOne = '#'.$subjects[0];
   $liTwo = '#'.$subjects[1];
+  $liThree = '#'.$subjects[2];
   ?>
 
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script type="text/javascript">
-        var animalOne = '<?php echo $subjects[0]?>'
-        var animalTwo = '<?php echo $subjects[1]?>'
-        var divOne = '<?php echo $divOne?>'
-        var divTwo = '<?php echo $divTwo?>'
-        var liOne = '<?php echo $liOne?>'
-        var liTwo = '<?php echo $liTwo?>'
+        var animalOne = '<?php echo $subjects[0];?>'
+        var animalTwo = '<?php echo $subjects[1];?>'
+        var animalThree = '<?php echo $subjects[2];?>'
+        var divOne = '<?php echo $divOne;?>'
+        var divTwo = '<?php echo $divTwo;?>'
+        var divThree = '<?php echo $divThree;?>'
+        var liOne = '<?php echo $liOne;?>'
+        var liTwo = '<?php echo $liTwo;?>'
+        var liThree = '<?php echo $liThree;?>'
 
         $(document).ready(function () {
             $('#source li').draggable({
@@ -73,6 +78,13 @@
                 accept: "li[data-value='<?php echo $subjects[1];?>']",
                 drop: function (event, ui) {
                     $(liTwo).append(ui.draggable);
+                }
+            });
+
+            $(divThree).droppable({
+                accept: "li[data-value='<?php echo $subjects[2];?>']",
+                drop: function (event, ui) {
+                    $(liThree).append(ui.draggable);
                 }
             });
         });
@@ -107,7 +119,12 @@
 
         <div class="divClass" id='div<?php echo $subjects[1];?>'>
           <?php echo $subjects[1]?>
-            <ul id='<?php echo $subjects[1];?>'></ul>
+          <ul id='<?php echo $subjects[1];?>'></ul>
+        </div>
+
+        <div class="divClass" id='div<?php echo $subjects[2];?>'>
+          <?php echo $subjects[2]?>
+          <ul id='<?php echo $subjects[2];?>'></ul>
         </div>
     </form>
   <?php echo $output; ?>
