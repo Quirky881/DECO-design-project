@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/basic.js"></script>
+    <!-- <script type="text/javascript" src="../../extras/jquery.min.1.7.js"></script> -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <title>profile</title>
+</head>
+
+<body>
+    
+<div class="container-fluid">
+    <div class="row d-flex justify-content-center">
+    <div class="col-lg-3" ><input type='file' id="actual" hidden="hidden"/><img id="myImg" src="images/profile.png" alt="profile image" style="width: 40%; border-radius: 10%">
+    <div class="row d-flex justify-content-center">
+        <div class="col-lg-6" ><img id="upload-icon"src="images/upload-icon.svg" alt="upload icon" style="width: 30%"></div>
+    
+        
+        <div class="col-lg-6" ><img class="camera-icon"src="images/camera-icon.svg" alt="camera-icon" style="width: 30%"></div>
+    </div>
+    </div>
+
+    <div class="col-lg-5">
+        <section id="user-profile">
+
+            <form method="get" action="index.html">
+
+                <fieldset>
+
+                    <legend>
+                        <h4>Profile</h4>
+                    </legend>
+
+                    <div class="form-item">
+                        <label for="form-full-name">Name:</label>
+                        <div class="form-element">
+                            <input type="text" name="full_name" id="form-full-name" placeholder="Amy Flower" />
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="form-item">
+                        <label for="form-email">Email:</label>
+                        <div class="form-element">
+                            <input type="text" name="email" id="form-email" placeholder="amy.flower@gmail.com" />
+                        </div>
+                    </div>
+
+                    <br>
+                    
+                    <div class="form-item">
+                        <label for="switch">Microphone</label>
+                        <div>
+                            <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                            </label>
+                        </div>
+                    </div>
+
+                </fieldset>
+                <br>
+                <fieldset>
+                    <button type="submit">Save</button>
+                </fieldset>
+
+            </form>
+
+        </section>
+    </div>
+    </div>
+</div>
+
+<script>
+        const uploadBtn = document.getElementById("upload-icon");
+        const actualBtn = document.getElementById("actual")
+
+    window.addEventListener('load', function() {
+    uploadBtn.addEventListener("click",function(){
+        actualBtn.click();
+    })
+
+        document.querySelector('input[type="file"]').addEventListener('change', function() {
+            if (this.files && this.files[0]) {
+                var img = document.querySelector('img');  // $('img')[0]
+                img.src = URL.createObjectURL(this.files[0]); // set src to file url
+                img.onload = imageIsLoaded; // optional onload event listener
+            }
+        });
+    });
+    </script>    
+
+
+</body>
+
+</html>
