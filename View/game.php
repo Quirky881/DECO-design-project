@@ -109,9 +109,13 @@
         img{
           padding:1px;
         }
+        .instructions{
+          background:white;
+          text-align:center;
+        }
     </style>
-  <body style="font-family: Arial">
-    <form id="form1" runat="server">
+    <div class = "instructions"><em>Drag the Mystery words to the correct image</em></div>
+    <form id="form1">
         <div class="divClass">
             Mystery
                 <ul id="source">
