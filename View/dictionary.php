@@ -32,7 +32,7 @@
       background: black;
       color:#fff;
     }
-    .fixed_header <tbody></tbody> {
+    .fixed_header tbody {
       background: white;
       color:black;
       background-image:none;
