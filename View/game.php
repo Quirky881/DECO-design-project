@@ -3,11 +3,6 @@
   <?php include("header.php"); ?>
 
   <?php
-  //variables needed later
-  $divOne = '#divCountries';
-  $divTwo = '#divCities';
-  $liOne = '#countries';
-  $liTwo = '#cities';
 
   //database stuff
   $servername = "localhost";
@@ -16,7 +11,7 @@
   $dbname = "deco7180_project";
   $output = "";
   $languages = "('Yugara', 'Yugarabul')";
-  $subjects = array('Kangaroo','Koala','Shark');
+  $subjects = array('Koala','Kangaroo','Shark');
 
   // Create connection
   $conn = new mysqli($servername, $username, $password, $dbname);
@@ -28,26 +23,34 @@
   echo "Connected successfully"."<br>";
 
   
-  $sql = "SELECT word, english_meaning FROM Words WHERE language IN " . $languages . "AND english_meaning IN ('" . $subjects[0] . "','" . $subjects[1] . "','" .$subjects[2] . "')";
+  $sql = "SELECT word, english_meaning FROM Words WHERE language IN " . $languages . "AND english_meaning IN ('" . $subjects[0] . "','" . $subjects[1] . "','" .$subjects[2] . "') ORDER BY word ASC";
  
   echo $sql."<br>";
   $result = $conn->query($sql);
   if ($result->num_rows > 0) {
     // output data of each row
-    $output.= "<div style='text-align:center;'><table style = 'width:90%;text-align: center;'><tr><th>Word</th><th>Meaning</th></tr>";
     while($row = $result->fetch_assoc()) {
-      $output.= "<tr><td>" . $row["word"]. "</td><td>" . $row["english_meaning"]."</td></tr>";
+      $output.= "<li data-value='". $row["english_meaning"] ."'>" . $row["word"]. "</li>";
+      //$output.= "<li data-value='Koala'>" . $row["word"]. "</li>";
     }
-    $output.= "</table></div>";
   } else {
       echo "eooro 0 results";
     }
+  echo $output;
   $conn->close();
+
+  //variables needed later
+  $divOne = '#div'.$subjects[0];
+  $divTwo = '#div'.$subjects[1];
+  $liOne = '#'.$subjects[0];
+  $liTwo = '#'.$subjects[1];
   ?>
 
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script type="text/javascript">
+        var animalOne = '<?php echo $subjects[0]?>'
+        var animalTwo = '<?php echo $subjects[1]?>'
         var divOne = '<?php echo $divOne?>'
         var divTwo = '<?php echo $divTwo?>'
         var liOne = '<?php echo $liOne?>'
@@ -60,14 +63,14 @@
             });
 
             $(divOne).droppable({
-                accept: 'li[data-value="country"]',
+                accept: "li[data-value='<?php echo $subjects[0];?>']",
                 drop: function (event, ui) {
                     $(liOne).append(ui.draggable);
                 }
             });
 
             $(divTwo).droppable({
-                accept: 'li[data-value="city"]',
+                accept: "li[data-value='<?php echo $subjects[1];?>']",
                 drop: function (event, ui) {
                     $(liTwo).append(ui.draggable);
                 }
@@ -91,25 +94,20 @@
   <body style="font-family: Arial">
     <form id="form1" runat="server">
         <div class="divClass">
-            wordlist
+            Words for Anmimals
                 <ul id="source">
-                  <?php echo "<li data-value='country'>USA</li>";?>
-                    <li data-value="country">India</li>
-                    <li data-value="country">UK</li>
-                    <li data-value="city">New York</li>
-                    <li data-value="city">Chennai</li>
-                    <li data-value="city">London</li>
+                  <?php echo  $output;?>
                 </ul>
         </div>
 
-        <div class="divClass" id="divCountries">
-            Countries
-            <ul id="countries"></ul>
+        <div class="divClass" id='div<?php echo $subjects[0];?>'>
+          <?php echo $subjects[0]?>
+          <ul id='<?php echo $subjects[0];?>'></ul>
         </div>
 
-        <div class="divClass" id="divCities">
-            Cities
-            <ul id="cities"></ul>
+        <div class="divClass" id='div<?php echo $subjects[1];?>'>
+          <?php echo $subjects[1]?>
+            <ul id='<?php echo $subjects[1];?>'></ul>
         </div>
     </form>
   <?php echo $output; ?>
