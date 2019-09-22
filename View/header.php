@@ -2,7 +2,7 @@
 <?php include("../Model/databaseConnect.php"); ?>
 
 <head>
-  <title><?php echo $activePage; ?></title>
+  <title><?php echo ucfirst($activePage); ?></title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -45,7 +45,16 @@
           <a class="col-2 blank" href="../View/profile.php">
             <div id="navicon" class="col-12<?php if($activePage == "profile") echo ' active'; ?>">
               <img class="navImgText" src="../View/Images/homePageIcon.svg" alt="profile">
-              <span>Profile</span>
+              <span>
+                <?php
+                  session_start();
+                  if($_SESSION['Username'] == "") {
+                    echo "Guest";
+                  } else {
+                    echo $_SESSION['Username'];
+                  }
+                ?>
+              </span>
             </div>
           </a>
           <div class="col-1 blank">
@@ -58,9 +67,10 @@
               </select>
             </form>
           </div>
-          <a class="col-1 blank" href="../View/story.php">
+          <a class="col-1 blank" href="../View/help.php">
             <div id="navicon" class="col-12 <?php if($activePage == "help") echo ' active'; ?>" >
-              <span><img class="navImg" src="../View/Images/homePageIcon.svg" alt="Home">Help</span>
+              <img class="navImg" src="../View/Images/homePageIcon.svg" alt="Help">
+              <span>Help</span>
             </div>
           </a>
         </div>
