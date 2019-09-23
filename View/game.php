@@ -102,18 +102,27 @@
         li {
             font-size: 30px;
         }
-        a , figcaption{
+        figcaption{
           font-size: 5px;
           padding:1px;
         }
         img{
           padding:1px;
         }
+        .instructions{
+          background:white;
+          text-align:center;
+        }
+        /*li[data-value = "Koala"]{
+          color:red;
+        }
+        this works but it identifies animal not language
+        */
     </style>
-  <body style="font-family: Arial">
-    <form id="form1" runat="server">
+    <div class = "instructions"><em>Drag the Mystery words to the correct image</em></div>
+    <form id="form1">
         <div class="divClass">
-            Mystery wordfdsfsadfsdafsdfsdfdsf
+            Mystery
                 <ul id="source">
                   <?php echo  $output;?>
                 </ul>

@@ -92,3 +92,16 @@ function isChrome() {
 	return navigator.userAgent.indexOf('Chrome')!=-1;
 
 }
+
+
+function bookEntry() {
+	document.getElementById("entry1").onclick = function(){
+	location.href = "story.php";}
+  }
+
+
+function bookExit() {
+  document.getElementById("exit").onclick = function(){
+  location.href = "storyBook.html";}
+}
+

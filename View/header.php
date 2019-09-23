@@ -24,7 +24,7 @@
               <img class="navImg" src="../View/Images/homePageIcon.svg" alt="Home">
             </div>
           </a>
-          <a class="col-2 blank <?php if($activePage == "story") echo ' active'; ?>" href="../View/story.php">
+          <a class="col-2 blank <?php if($activePage == "storyEntry") echo ' active'; ?>" href="../View/storyEntry.php">
             <div id="navicon" class="col-12 blank">
                 <img class="navImgText" src="../View/Images/storyBookIcon.svg" alt="Dream Time Story">
                 <span>Dream Time Story</span>
@@ -44,7 +44,7 @@
           </a>
           <a class="col-2 blank" href="../View/profile.php">
             <div id="navicon" class="col-12<?php if($activePage == "profile") echo ' active'; ?>">
-              <img class="navImgText" src="../View/Images/homePageIcon.svg" alt="profile">
+              <img class="navImgText" src="../View/Images/acform.jpg" alt="profile">
               <span>
                 <?php
                   session_start();
@@ -69,8 +69,7 @@
           </div>
           <a class="col-1 blank" href="../View/help.php">
             <div id="navicon" class="col-12 <?php if($activePage == "help") echo ' active'; ?>" >
-              <img class="navImg" src="../View/Images/homePageIcon.svg" alt="Help">
-              <span>Help</span>
+              <img class="navImg" src="../View/Images/help.jpg" alt="Help">
             </div>
           </a>
         </div>
