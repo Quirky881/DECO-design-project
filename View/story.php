@@ -3,8 +3,9 @@
   <?php include("header.php"); ?>
 
     <div class="row main">
-      <div class="col-2"></div>
-      <div class="col-8">
+	  <div class="col-1"></div>
+	
+      <div class="col-10">
         <div class="readbook">
 
           <div class="flipbook-viewport">
@@ -97,10 +98,10 @@
           				<div class="padding-style">
           					Weeri and Walawidbit were two greedy men. They decided to steal the last of the water for themselves and then run away.
 
-          					</br>
+          					<br>
 
           					In secret, they made a large water-carrier, which was called an eel-a-mun. When everyone was asleep, they stole the water from the last well and hurried off.
-          					</br>
+          					<br>
           					When the people woke up, there was no water for them. This was very bad, because there were little
 
           					<div calss="flip-box-position" style="display:inline-block; " >
@@ -116,8 +117,8 @@
           									<div class="back">
           										<div id="back-img">
           											<div class="abori-word">
-          												<p>Malu</p>
-          												<p class="eng-meaning">English:Sea</p>
+          												<p>Kazi</p>
+          												<p class="eng-meaning">English:children</p>
           											</div>
           										</div>
           									</div>
@@ -166,16 +167,14 @@
           				</div>
           			</div>
 
-          			<!-- <div style="background-image:url(pages/8.jpg)"></div>
-          			<div style="background-image:url(pages/9.jpg)"></div>
-          			<div style="background-image:url(pages/10.jpg)"></div>
-          			<div style="background-image:url(pages/11.jpg)"></div>
-          			<div style="background-image:url(pages/12.jpg)"></div> -->
           		</div>
           </div>
         </div>
-      </div>
-      <div class="col-2" id="exit" onclick="bookExit()"><img src="../View/Images/closeButton.png" alt="close button"></div>
+	  </div>
+	  <div class="col-1" id="exit" onclick="bookExit()">
+		<img src="../View/Images/closeButton.png" alt="close button">
+	</div>
+	</div>
     </div>
 
 

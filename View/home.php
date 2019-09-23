@@ -4,6 +4,12 @@
     <div name="row main">
       <div class="col-3"></div>
       <div class="col-6">
+        <div class="row content">
+          <div class="indigenous"></div>
+          <div class="langbox">
+
+          </div>
+        </div>
       </div>
       <div class="col-3"></div>
     </div>

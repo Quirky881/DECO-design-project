@@ -113,6 +113,11 @@
           background:white;
           text-align:center;
         }
+        /*li[data-value = "Koala"]{
+          color:red;
+        }
+        this works but it identifies animal not language
+        */
     </style>
     <div class = "instructions"><em>Drag the Mystery words to the correct image</em></div>
     <form id="form1">
