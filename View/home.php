@@ -7,7 +7,7 @@
         <div class="row content">
           <div class="indigenous"></div>
           <div class="langbox">
-
+            <p>home</p>
           </div>
         </div>
       </div>
