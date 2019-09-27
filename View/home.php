@@ -7,8 +7,8 @@
         <div class="row content">
         <section class="manselect">
         <div id="man">
-            <img class="manfig" src="../Images/select.jpg">
-            <img onclick="changeImage()" src="../Images/aboriginals3.jpg" height="200">
+            <img class="manfig" src="../View/Images/select.jpg">
+            <img onclick="changeImage()" src="../View/Images/aboriginals3.jpg" height="200">
         </div>
         <div class="selection">
             <div class="wordlist" href="">
