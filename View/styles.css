@@ -7,10 +7,6 @@ body {
   background-size: 100%;
 }
 
-.row {
-  min-height: 100px;
-}
-
 .main {
   margin-top: 5%;
 }
