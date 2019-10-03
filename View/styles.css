@@ -467,7 +467,7 @@ border-radius: 50%;
 	margin: 27% 0 0 38%;
 	cursor: pointer;
 
-	
+
 }
 
 #entry1 img{
@@ -481,8 +481,8 @@ border-radius: 50%;
 
 /* maggify when hover */
 #entry1 img:hover{
-    transform: scale(1.1); 
-    animation-play-state: paused; 
+    transform: scale(1.1);
+    animation-play-state: paused;
 }
 
 /* ---storyEntry-- */

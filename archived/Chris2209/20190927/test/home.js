@@ -3,12 +3,12 @@ function changeImage(){
     element=document.getElementById('manfig')
     if (element.src.match("select"))
     {
-        element.src="images/select.jpg";
+        element.src="../test/Images/select.jpg";
     }
     else
     {
-        element.src="images/aboriginals3.jpg";
-    } 
+        element.src="../test/Images/aboriginals3.jpg";
+    }
 }
 
 $(document).ready(function() {
@@ -39,7 +39,7 @@ $(document).ready(function() {
         console.log('button clicked...', $(this).position());
 
         console.log('man position', $('#man').position());
-        
+
 
     });
 

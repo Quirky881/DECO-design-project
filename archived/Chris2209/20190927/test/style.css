@@ -1,5 +1,5 @@
 body {
-    background-image: url(images/backgroundimg.jpg);
+    background-image: url(../test/Images/backgroundimg.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -19,7 +19,7 @@ body {
     margin: 40px 40px;
 }
 
-.selection { 
+.selection {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
