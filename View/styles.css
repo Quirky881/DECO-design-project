@@ -109,6 +109,21 @@ footer {
   position: fixed;
 }
 
+/***************************Map*********************************/
+
+#map {
+		width: 60vw;
+		height: 60vh;
+		margin: 0 auto;
+		box-shadow: rgba(0,0,0,0.5) 0 5px 10px;
+		/* https://css-tricks.com/fun-viewport-units */
+}
+
+#marker-details {
+		text-align: center;
+		margin-top: 2em;
+}
+
 /***************************Home*********************************/
 
 /* body {
