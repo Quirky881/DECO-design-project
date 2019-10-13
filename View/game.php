@@ -117,6 +117,7 @@
         .instructions{
           background:white;
           text-align:center;
+          font-size:25px;
         }
         
         #mystery li{
@@ -125,7 +126,7 @@
           color:black;
         }
         .instructions form{
-          padding-left:100px;
+          padding-left:2%;
         }
         div form{
           float:left;
@@ -153,6 +154,7 @@
     </div>
     
     <form id="form1">
+   
         <div>
           <div class="divClass" id = "mystery">
             <label>
