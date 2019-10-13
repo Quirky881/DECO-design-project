@@ -12,6 +12,7 @@
   <link href="../View/styles.css" rel="stylesheet" type="text/css">
   <script type="text/javascript" src="../../Control/extras/jquery.min.1.7.js"></script>
   <script type="text/javascript" src="../../Control/extras/modernizr.2.5.3.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 </head>
 
@@ -19,7 +20,7 @@
     <div class="row">
       <header class="container-fluid">
         <div class="row navbar">
-          <a class="col-1 blank  <?php if($activePage == "home") echo ' active'; ?>" href="../View/home.php">
+          <a class="col-1 <?php if($activePage == "home") echo ' active'; ?>" href="../View/home.php">
             <div id="navicon" class="col-12" >
               <img class="navImg" src="../View/Images/homePageIcon.svg" alt="Home">
             </div>
@@ -42,7 +43,7 @@
               <span>Dictionary</span>
             </div>
           </a>
-          <a class="col-2 blank" href="../View/profile.php">
+          <a class="col-1 blank" href="../View/profile.php">
             <div id="navicon" class="col-12<?php if($activePage == "profile") echo ' active'; ?>">
               <img class="navImgText" src="../View/Images/acform.jpg" alt="profile">
               <span>
@@ -57,19 +58,34 @@
               </span>
             </div>
           </a>
-          <div class="col-1 blank">
-            <form>
-              <select>
-                <option value="English">English</option>
-                <option value="中文">中文</option>
-                <option value="日本語">日本語</option>
-                <option value="French">French</option>
-              </select>
-            </form>
+          <div class="col-2 blank">
+            <div class="row text-center" style="margin-top: 4%;">
+              <div class="col-4">
+                <p><?php
+                  if ($_SESSION["Language"]) {
+                    echo $_SESSION["Language"];
+                  } else {
+                    echo "All";
+                  } ?></p>
+              </div>
+              <div class="col-2">
+                &#8651;
+              </div>
+              <div class="col-6">
+                <form>
+                  <select>
+                    <option value="English">English</option>
+                    <option value="中文">中文</option>
+                    <option value="日本語">日本語</option>
+                    <option value="French">French</option>
+                  </select>
+                </form>
+              </div>
+            </div>
           </div>
           <a class="col-1 blank" href="../View/help.php">
             <div id="navicon" class="col-12 <?php if($activePage == "help") echo ' active'; ?>" >
-              <img class="navImg" src="../View/Images/help.jpg" alt="Help">
+              <img class="navImgText" src="../View/Images/help-icon.svg" alt="Help">
             </div>
           </a>
         </div>
