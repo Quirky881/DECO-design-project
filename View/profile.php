@@ -50,7 +50,7 @@
                       <div class="row">
                         <div class="col-12 text-center" >
                         <div class="avatar">
-    
+
                           <div class="avatar-upload">
                             <div class="avatar-edit">
                               <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
@@ -61,12 +61,15 @@
                               </div>
                             </div>
                           </div>
-                        </div>   
-
-                        
+                        </div>
+                        <div class="row d-flex justify-content-center">
+                          <div class="col-6" >
+                            <img id="upload-icon"src="../View/Images/upload-icon.svg" alt="upload icon" style="width: 40%; height: 40%; border-radius: 10%">
+                          </div>
                         </div>
                       </div>
-                      
+                    </div>
+
 
                       <div class="col-6">
                         <button type="submit" class="btn btn-primary">Save</button>

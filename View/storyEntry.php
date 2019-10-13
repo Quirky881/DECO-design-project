@@ -2,7 +2,7 @@
 <html>
   <?php include("header.php"); ?>
   <body>
-    <div class="row main">
+    <div class="row main" style="margin-top: 0;">
       <div class="col-0"></div>
       <div class="col-12">
         <div id="entry" >
@@ -16,14 +16,11 @@
     </div>
     <div class="col-0"></div>
   <script>
-    function bookEntry() {
-	document.getElementById("entry1").onclick = function(){
-	location.href = "story.php";}
+  function bookEntry() {
+    // document.getElementById("entry1").onclick = function() {
+  	   location.href = "story.php";
+    // }
   }
   </script>
 
-  </body>
-  
-
   <?php include("footer.php"); ?>
-</html>

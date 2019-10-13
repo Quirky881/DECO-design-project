@@ -3,9 +3,9 @@
   <?php include("header.php"); ?>
 
     <div class="row main">
-	  <div class="col-1"></div>
-	
-      <div class="col-10">
+	  <div class="col-2"></div>
+
+      <div class="col-8">
         <div class="readbook">
 
           <div class="flipbook-viewport">
@@ -177,7 +177,7 @@
           </div>
         </div>
 	  </div>
-	  <div class="col-1" id="exit" onclick="bookExit()">
+	  <div class="col-2" id="exit" onclick="bookExit()">
 		<img src="../View/Images/closeButton.png" alt="close button">
 	</div>
 	</div>

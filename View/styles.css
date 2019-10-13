@@ -36,12 +36,10 @@ div.navbar {
 }
 
 .navImg {
-  max-height: 60%;
   max-width: 60%;
 }
 
 .navImgText {
-  max-height: 20%;
   max-width: 20%;
 }
 
@@ -525,22 +523,19 @@ background-position: center;
 	position: relative;
   }
 
-#entry,
-#entry1{
+#entry, #entry1{
 	position: absolute;
 }
 
 #entry1{
 	z-index: 1000;
 	border: blue;
-	margin: 27% 0 0 38%;
+	margin: 27% 0 0 43%;
 	cursor: pointer;
-
-
 }
 
 #entry1 img{
-	width: 11vh;
+	width: 10%;
 	border-radius: 100%;
 	border:0.7vh solid rgb(184, 196, 17);
 	box-shadow: 0 0 0 0.8vh rgb(165, 50, 5), 0 0 0 1.5vh rgb(46, 54, 165);
