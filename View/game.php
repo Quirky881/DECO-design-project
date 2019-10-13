@@ -127,33 +127,61 @@
                   <?php echo  $output;?>
                 </ul>
         </div>
+        <div>
+          <div class="divClass" id='div<?php echo $subjects[0];?>'>
+            <?php echo $subjects[0]?><br>
+            <figure>
+              <img src="../View/Images/Koala.jpg" alt = "Koala"><br>
+              <figcaption>https://www.flickr.com/photos/98119192@N05/9212325177</figcaption>
+            </figure> 
+            <ul id='<?php echo $subjects[0];?>'></ul>
+          </div>
 
-        <div class="divClass" id='div<?php echo $subjects[0];?>'>
-          <?php echo $subjects[0]?><br>
-          <figure>
-            <img src="../View/Images/Koala.jpg" alt = "Koala"><br>
-            <figcaption>https://www.flickr.com/photos/98119192@N05/9212325177</figcaption>
-          </figure> 
-          <ul id='<?php echo $subjects[0];?>'></ul>
-        </div>
+          <div class="divClass" id='div<?php echo $subjects[1];?>'>
+            <?php echo $subjects[1]?><br>
+            <figure>
+              <img src="../View/Images/Kangaroo.jpg" alt = "Kangaroo"><br>
+              <figcaption>https://www.flickr.com/photos/ysc/2179798100/</figcaption>
+            </figure>
+            <ul id='<?php echo $subjects[1];?>'></ul>
+          </div>
 
-        <div class="divClass" id='div<?php echo $subjects[1];?>'>
-          <?php echo $subjects[1]?><br>
-          <figure>
-            <img src="../View/Images/Kangaroo.jpg" alt = "Kangaroo"><br>
-            <figcaption>https://www.flickr.com/photos/ysc/2179798100/</figcaption>
-          </figure>
-          <ul id='<?php echo $subjects[1];?>'></ul>
+          <div class="divClass" id='div<?php echo $subjects[2];?>'>
+            <?php echo $subjects[2]?><br>
+            <figure>
+              <img src="../View/Images/Shark.jpg" alt = "Shark"><br>
+              <figcaption>https://www.flickr.com/photos/skymind25/79609238</figcaption>
+            </figure>
+            <ul id='<?php echo $subjects[2];?>'></ul>
+          </div>
         </div>
+        <div>
+          <div class="divClass" id='1'>
+            <?php echo $subjects[2]?><br>
+            <figure>
+              <img src="../View/Images/Shark.jpg" alt = "Shark"><br>
+              <figcaption>https://www.flickr.com/photos/skymind25/79609238</figcaption>
+            </figure>
+            <ul id='<?php echo $subjects[2];?>'></ul>
+          </div>
 
-        <div class="divClass" id='div<?php echo $subjects[2];?>'>
-          <?php echo $subjects[2]?><br>
-          <figure>
-            <img src="../View/Images/Shark.jpg" alt = "Shark"><br>
-            <figcaption>https://www.flickr.com/photos/skymind25/79609238</figcaption>
-          </figure>
-          <ul id='<?php echo $subjects[2];?>'></ul>
+          <div class="divClass" id='2'>
+            <?php echo $subjects[2]?><br>
+            <figure>
+              <img src="../View/Images/Shark.jpg" alt = "Shark"><br>
+              <figcaption>https://www.flickr.com/photos/skymind25/79609238</figcaption>
+            </figure>
+            <ul id='<?php echo $subjects[2];?>'></ul>
+          </div>
+
+          <div class="divClass" id='3'>
+            <?php echo $subjects[2]?><br>
+            <figure>
+              <img src="../View/Images/Shark.jpg" alt = "Shark"><br>
+              <figcaption>https://www.flickr.com/photos/skymind25/79609238</figcaption>
+            </figure>
+            <ul id='<?php echo $subjects[2];?>'></ul>
+          </div>
         </div>
-    </form>
   <?php include("footer.php"); ?>
 </html>
