@@ -39,10 +39,7 @@
                           </div>
                           <div class="col-2"></div>
                           <div class="col-4">
-                              <label class="switch">
-                              <input type="checkbox">
-                              <span class="slider round"></span>
-                              </label>
+                              
                           </div>
                         </div>
                       </div>
