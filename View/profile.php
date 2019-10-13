@@ -35,7 +35,7 @@
                       <div class="form-item">
                         <div class="row">
                           <div class="col-6">
-                            <label for="switch">Microphone</label>
+                          <input type="password" name="psw">
                           </div>
                           <div class="col-2"></div>
                           <div class="col-4">
@@ -49,19 +49,24 @@
 
                       <div class="row">
                         <div class="col-12 text-center" >
-                          <input type='file' id="actual" hidden="hidden"/>
-                          <img id="myImg" src="../View/Images/profile.png" alt="profile image" style="width: 40%; height: 80%; border-radius: 10%">
+                        <div class="avatar">
+    
+                          <div class="avatar-upload">
+                            <div class="avatar-edit">
+                              <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
+                              <label for="imageUpload"></label>
+                            </div>
+                            <div class="avatar-preview">
+                              <div id="imagePreview" style="background-image: url(images/profile.png);">
+                              </div>
+                            </div>
+                          </div>
+                        </div>   
+
+                        
                         </div>
                       </div>
-                      <div class="row d-flex justify-content-center">
-                          <div class="col-6" >
-                            <img id="upload-icon"src="../View/Images/upload-icon.svg" alt="upload icon" style="width: 40%; height: 40%; border-radius: 10%">
-                          </div>
-
-                          <div class="col-6" >
-                            <img class="camera-icon"src="../View/Images/camera-icon.svg" alt="camera-icon" style="width: 40%; height: 40%; border-radius: 10%">
-                          </div>
-                      </div>
+                      
 
                       <div class="col-6">
                         <button type="submit" class="btn btn-primary">Save</button>
@@ -79,22 +84,22 @@
   </div>
 
 <script>
-        const uploadBtn = document.getElementById("upload-icon");
-        const actualBtn = document.getElementById("actual")
-
-    window.addEventListener('load', function() {
-    uploadBtn.addEventListener("click",function(){
-        actualBtn.click();
-    })
-
-        document.querySelector('input[type="file"]').addEventListener('change', function() {
-            if (this.files && this.files[0]) {
-                var img = document.querySelector('img');  // $('img')[0]
-                img.src = URL.createObjectURL(this.files[0]); // set src to file url
-                img.onload = imageIsLoaded; // optional onload event listener
-            }
-        });
-    });
+// https://codepen.io/siremilomir/pen/jBbQGo
+function readURL(input) {
+if (input.files && input.files[0]) {
+    var reader = new FileReader();
+    reader.onload = function(e) {
+        $('#imagePreview').css('background-image', 'url('+e.target.result +')');
+        $('#imagePreview').hide();
+        $('#imagePreview').fadeIn(650);
+    }
+    reader.readAsDataURL(input.files[0]);
+}
+}
+$("#imageUpload").change(function() {
+    readURL(this);
+});
+// end
     </script>
 
   <?php include("footer.php"); ?>
