@@ -22,9 +22,9 @@
   }
   //echo "Connected successfully"."<br>";
 
-  
+
   $sql = "SELECT word, english_meaning FROM Words WHERE language IN " . $languages . "AND english_meaning IN ('" . $subjects[0] . "','" . $subjects[1] . "','" .$subjects[2] . "') ORDER BY word ASC";
- 
+
   //echo $sql."<br>";
   $result = $conn->query($sql);
   if ($result->num_rows > 0) {
@@ -119,7 +119,7 @@
           text-align:center;
           font-size:18px;
         }
-        
+
         #mystery li{
           display:inline;
           padding: 9px;
@@ -136,91 +136,92 @@
         }
 
     </style>
-    <div class = "instructions"><em>Drag the Mystery words to the correct image</em>
-    <form>
-      <label for="Language">Language:</label>
-      <select name= "Language">
-        <option value="Yugara">Yugara</option>
-        <option value="Yugarabul">Yugarabul</option>
-      </select>
-    </form>
-    <form>
-      <label for="Topic">Topic:</label>
-      <select name= "Topic">
-        <option value="Animals">Animals</option>
-        <option value="Greetings">Greetings</option>
-      </select>
-    </form>
-    </div>
-    
-    <form id="form1">
-    <br>
-        <div>
-          <div class="divClass" id = "mystery">
-            <label>
-            Mystery Words
-            </label>
-            <ul id="source">
-              <?php echo  $output;?>
-            </ul>
-          </div>
-        </div>
-        <div>
-          <div class="divClass" id='div<?php echo $subjects[0];?>'>
-            <?php echo $subjects[0]?><br>
-            <figure>
-              <img src="../View/Images/Koala.jpg" alt = "Koala"><br>
-              <figcaption>https://www.flickr.com/photos/98119192@N05/9212325177</figcaption>
-            </figure> 
-            <ul id='<?php echo $subjects[0];?>'></ul>
-          </div>
-
-          <div class="divClass" id='div<?php echo $subjects[1];?>'>
-            <?php echo $subjects[1]?><br>
-            <figure>
-              <img src="../View/Images/Kangaroo.jpg" alt = "Kangaroo"><br>
-              <figcaption>https://www.flickr.com/photos/ysc/2179798100/</figcaption>
-            </figure>
-            <ul id='<?php echo $subjects[1];?>'></ul>
-          </div>
-
-          <div class="divClass" id='div<?php echo $subjects[2];?>'>
-            <?php echo $subjects[2]?><br>
-            <figure>
-              <img src="../View/Images/Shark.jpg" alt = "Shark"><br>
-              <figcaption>https://www.flickr.com/photos/skymind25/79609238</figcaption>
-            </figure>
-            <ul id='<?php echo $subjects[2];?>'></ul>
-          </div>
-        </div>
-        <div>
-          <div class="divClass" id='1'>
-            <?php echo $subjects[2]?><br>
-            <figure>
-              <img src="../View/Images/Shark.jpg" alt = "Shark"><br>
-              <figcaption>https://www.flickr.com/photos/skymind25/79609238</figcaption>
-            </figure>
-            <ul id='<?php echo $subjects[2];?>'></ul>
-          </div>
-
-          <div class="divClass" id='2'>
-            <?php echo $subjects[2]?><br>
-            <figure>
-              <img src="../View/Images/Shark.jpg" alt = "Shark"><br>
-              <figcaption>https://www.flickr.com/photos/skymind25/79609238</figcaption>
-            </figure>
-            <ul id='<?php echo $subjects[2];?>'></ul>
-          </div>
-
-          <div class="divClass" id='3'>
-            <?php echo $subjects[2]?><br>
-            <figure>
-              <img src="../View/Images/Shark.jpg" alt = "Shark"><br>
-              <figcaption>https://www.flickr.com/photos/skymind25/79609238</figcaption>
-            </figure>
-            <ul id='<?php echo $subjects[2];?>'></ul>
-          </div>
-        </div>
+    <div class="row main">
+      <div class = "instructions"><em>Drag the Mystery words to the correct image</em>
+      <form>
+        <label for="Language">Language:</label>
+        <select name= "Language">
+          <option value="Yugara">Yugara</option>
+          <option value="Yugarabul">Yugarabul</option>
+        </select>
       </form>
+      <form>
+        <label for="Topic">Topic:</label>
+        <select name= "Topic">
+          <option value="Animals">Animals</option>
+          <option value="Greetings">Greetings</option>
+        </select>
+      </form>
+      </div>
+
+      <form id="form1">
+      <br>
+          <div>
+            <div class="divClass" id = "mystery">
+              <label>
+              Mystery Words
+              </label>
+              <ul id="source">
+                <?php echo  $output;?>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <div class="divClass" id='div<?php echo $subjects[0];?>'>
+              <?php echo $subjects[0]?><br>
+              <figure>
+                <img src="../View/Images/Koala.jpg" alt = "Koala"><br>
+                <figcaption>https://www.flickr.com/photos/98119192@N05/9212325177</figcaption>
+              </figure>
+              <ul id='<?php echo $subjects[0];?>'></ul>
+            </div>
+
+            <div class="divClass" id='div<?php echo $subjects[1];?>'>
+              <?php echo $subjects[1]?><br>
+              <figure>
+                <img src="../View/Images/Kangaroo.jpg" alt = "Kangaroo"><br>
+                <figcaption>https://www.flickr.com/photos/ysc/2179798100/</figcaption>
+              </figure>
+              <ul id='<?php echo $subjects[1];?>'></ul>
+            </div>
+
+            <div class="divClass" id='div<?php echo $subjects[2];?>'>
+              <?php echo $subjects[2]?><br>
+              <figure>
+                <img src="../View/Images/Shark.jpg" alt = "Shark"><br>
+                <figcaption>https://www.flickr.com/photos/skymind25/79609238</figcaption>
+              </figure>
+              <ul id='<?php echo $subjects[2];?>'></ul>
+            </div>
+          </div>
+          <div>
+            <div class="divClass" id='1'>
+              <?php echo $subjects[2]?><br>
+              <figure>
+                <img src="../View/Images/Shark.jpg" alt = "Shark"><br>
+                <figcaption>https://www.flickr.com/photos/skymind25/79609238</figcaption>
+              </figure>
+              <ul id='<?php echo $subjects[2];?>'></ul>
+            </div>
+
+            <div class="divClass" id='2'>
+              <?php echo $subjects[2]?><br>
+              <figure>
+                <img src="../View/Images/Shark.jpg" alt = "Shark"><br>
+                <figcaption>https://www.flickr.com/photos/skymind25/79609238</figcaption>
+              </figure>
+              <ul id='<?php echo $subjects[2];?>'></ul>
+            </div>
+
+            <div class="divClass" id='3'>
+              <?php echo $subjects[2]?><br>
+              <figure>
+                <img src="../View/Images/Shark.jpg" alt = "Shark"><br>
+                <figcaption>https://www.flickr.com/photos/skymind25/79609238</figcaption>
+              </figure>
+              <ul id='<?php echo $subjects[2];?>'></ul>
+            </div>
+          </div>
+        </form>
+      </div>
   <?php include("footer.php"); ?>
-</html>

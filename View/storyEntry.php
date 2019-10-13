@@ -5,7 +5,7 @@
     <div class="row main" style="margin-top: 0;">
       <div class="col-0"></div>
       <div class="col-12">
-        <div id="entry" >
+        <div id="entry">
             <img src="../View/Images/title-page.svg" alt="title-page">
         </div>
 

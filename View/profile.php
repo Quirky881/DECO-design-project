@@ -6,14 +6,11 @@
     <div class="col-6">
       <div class="d-flex justify-content-center">
           <section id="user-profile">
-
               <form method="get" action="#">
-
                   <fieldset>
-
-                      <legend>
+                      <div id="profileHeader">
                           <h4>Profile</h4>
-                      </legend>
+                      </div>
 
                       <div class="form-item">
                           <label for="form-full-name">Name:</label>
@@ -32,7 +29,7 @@
 
                       <br>
 
-                      <!-- <div class="form-item">
+                      <div class="form-item">
                         <div class="row">
                           <div class="col-6">
                             <label for="switch">Microphone</label>
@@ -45,7 +42,7 @@
                               </label>
                           </div>
                         </div>
-                      </div> -->
+                      </div>
 
                       <div class="col-12">
                       <div class="avatar-upload">
@@ -60,19 +57,18 @@
                       </div>
 
 
-                      <!-- <div class="row">
+                      <div class="row">
                         <div class="col-12 text-center" >
                           <input type='file' id="actual" hidden="hidden"/>
                           <img id="myImg" src="../View/Images/profile.png" alt="profile image" style="width: 40%; height: 80%; border-radius: 10%">
                         </div>
-                      </div> -->
-                      
-
-                      <div class="col-6">
-                        <button type="submit" class="btn btn-primary">Save</button>
                       </div>
 
-                     
+                      <div class="row" style="margin: 2%">
+                        <div class="col-12 d-flex justify-content-center">
+                          <button type="submit" class="btn btn-primary">Save</button>
+                        </div>
+                      </div>
 
                   </fieldset>
                   <br>

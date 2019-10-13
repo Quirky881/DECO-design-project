@@ -121,7 +121,7 @@
   $count = $result->num_rows;
   if ($result->num_rows > 0) {
     // output data of each row
-    $output .= "<div><table class = 'fixed_header'><thead><tr><th>Word</th><th>Meaning</th><th>Language</th><th>Pronounced</th><th>Audio</th></tr></thead><tbody>";
+    $output .= "<div class='col-12 d-flex justify-content-center'><table class = 'fixed_header'><thead><tr><th>Word</th><th>Meaning</th><th>Language</th><th>Pronounced</th><th>Audio</th></tr></thead><tbody>";
     while($row = $result->fetch_assoc()) {
       $output .= "<tr><td>" . $row["word"]. "</td><td>" . $row["english_meaning"]."</td>"."<td>" . $row["language"]."</td>"."</td><td>" . $row["pronounced"]."<td>Unavailable</td></tr>";
     }
@@ -131,26 +131,29 @@
     }
   $conn->close();
   ?>
-  <form id="filter" method="get">
-    <p style = "width:100%;background-color:black;color:white;font-size:1.1em;margin-bottom:0;">SEARCH</p>
-    <p>
-      Language:
-      <input id="filter-text" name="Language" type="text"
-        placeholder="Filter by Language" value="<?php echo $filter?>">
-      <br>
-      English Meaning:
-      <input id="filter-text" name="Meaning" type="text"
-        placeholder="Filter by Meaning" value="<?php echo $filter2?>">
-      <br>
-      Word:
-      <input id="filter-text" name="Word" type="text"
-        placeholder="Filter for Word" value="<?php echo $filter3?>">
+  <div class="row main">
+    <div class="col-12 d-flex justify-content-center">
+      <form id="filter" method="get" style="margin-bottom: 1%;">
+        <p style = "width:100%;background-color:black;color:white;font-size:1.1em;margin-bottom:0;">SEARCH</p>
+        <p>
+          Language:
+          <input id="filter-text" name="Language" type="text"
+            placeholder="Filter by Language" value="<?php echo $filter?>">
+          <br>
+          English Meaning:
+          <input id="filter-text" name="Meaning" type="text"
+            placeholder="Filter by Meaning" value="<?php echo $filter2?>">
+          <br>
+          Word:
+          <input id="filter-text" name="Word" type="text"
+            placeholder="Filter for Word" value="<?php echo $filter3?>">
 
-      <input type="submit" value="Submit">
-    </p>
-  </form>
+          <input type="submit" value="Submit">
+        </p>
+      </form>
+    </div>
   <?php echo $output; ?>
+  </div>
 
 
   <?php include("footer.php"); ?>
-</html>
