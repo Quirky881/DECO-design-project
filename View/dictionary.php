@@ -1,11 +1,11 @@
 <!doctype html>
 <html>
   <?php include("header.php"); ?>
-  
+
   <style>
     .fixed_header{
-      width:70%; 
-      margin-left:15%; 
+      width:70%;
+      margin-left:15%;
       margin-right:15%;
       table-layout: auto;
       border-collapse: collapse;
@@ -15,7 +15,7 @@
       display:block;
       width: 100%;
       overflow: auto;
-      height: 500px;  
+      height: 500px;
     }
 
     .fixed_header thead tr {
@@ -36,10 +36,10 @@
       text-align: left;
       width: 300px;
     }
-    
+
     form {
-      width:30%; 
-      margin-left:35%; 
+      width:30%;
+      margin-left:35%;
       margin-right:35%;
       background-color:white;
       font-size:0.9em;
@@ -56,7 +56,7 @@
       box-sizing: border-box;
       background-image: none;
       text-align:left;
-      
+
     }
     input[type=submit] {
       width: 50%;
@@ -123,7 +123,7 @@
     // output data of each row
     $output .= "<div><table class = 'fixed_header'><thead><tr><th>Word</th><th>Meaning</th><th>Language</th><th>Pronounced</th><th>Audio</th></tr></thead><tbody>";
     while($row = $result->fetch_assoc()) {
-      $output .= "<tr><td>" . $row["word"]. "</td><td>" . $row["english_meaning"]."</td>"."<td>" . $row["language"]."</td>"."</td><td>" . $row["pronounced"]."<td>Unavalable</td></tr>";
+      $output .= "<tr><td>" . $row["word"]. "</td><td>" . $row["english_meaning"]."</td>"."<td>" . $row["language"]."</td>"."</td><td>" . $row["pronounced"]."<td>Unavailable</td></tr>";
     }
     $output .= "</tbody></table></div>";
   } else {
@@ -145,12 +145,12 @@
       Word:
       <input id="filter-text" name="Word" type="text"
         placeholder="Filter for Word" value="<?php echo $filter3?>">
-        
+
       <input type="submit" value="Submit">
     </p>
   </form>
   <?php echo $output; ?>
-  
+
 
   <?php include("footer.php"); ?>
 </html>

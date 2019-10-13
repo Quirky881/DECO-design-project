@@ -10,12 +10,9 @@
 
           <div class="flipbook-viewport">
           		<div class="flipbook">
-          			<div style="background-image:url(../View/Images/bookEntry1.pgn)" class="hard" id="turnon">
+          			<div style="background-image:url(../View/Images/title-page.svg)" class="title">
           				<h2>How the Water got to the Plains</h2>
-					</div>
-
-					<div class="hard" style="background-color:white"></div>
-					  
+          			</div>
           			<div class="onpage">
           				<div class="padding-style">
           					Way, way back in the first time, when everything was new, there was a group of Aboriginal people living on a mountain. It was a lovely place, but everyone was worried. It had not
@@ -43,7 +40,7 @@
           						</div>
           					</div>
           				for a long, long time and they were very short of
-          				<div calss="flip-box-position" style="display:inline-block; " >
+          				<div calss="flip-box-position" style="display:inline-block;" >
           					<div class="flip-box">
           						<div class="flip-container" >
           							<div class="flipper">
@@ -168,25 +165,17 @@
           				<div class="padding-style">
           				But, a wonderful thing had happened. Wherever the water had leaked onto the plains, there were now beautiful billabongs, or waterholes. There was grass and flowers and lovely water lilies and then there were shrubs and trees. And soon, the birds came and everyone was happy because there was enough water for everyone.
           				</div>
-					  </div>
-					  
-					<div class="hard" style="background-color:white" ></div>
-					<div class="hard" style="background-color:white"></div>
+          			</div>
 
           		</div>
           </div>
         </div>
 	  </div>
-	  <div class="col-2" id="exit" onclick="bookExit()">
-		<img src="../View/Images/closeButton.png" alt="close button">
-	</div>
+	  <div class="col-2" id="exit" >
+		    <img src="../View/Images/closeButton.png" alt="close button" onclick="bookExit()">
+    </div>
 	</div>
     </div>
-
-
-
-
-
 
       <script type="text/javascript">
 
@@ -213,10 +202,7 @@
 
       			// Auto center this flipbook
 
-      			autoCenter: true，
-				
-
-				
+      			autoCenter: true
 
       	});
       }
@@ -232,12 +218,8 @@
       });
 
       function bookExit() {
-        document.getElementById("exit").onclick = function(){
+        // document.getElementById("exit").onclick = function(){
         location.href = "../View/storyEntry.php";}
-      }
-	  
-
-
+      // }
       </script>
-      <?php include("footer.php"); ?>
-</html>
+    <?php include("footer.php"); ?>

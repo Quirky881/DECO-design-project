@@ -92,7 +92,7 @@
     <style>
         .divClass {
           border: 3px solid black;
-          font-size: 45px;
+          font-size: 40px;
           background-color: lightgray;
           width: 20%;
           padding: 5px;
@@ -104,7 +104,7 @@
         }
 
         li {
-            font-size: 30px;
+            font-size: 25px;
         }
         figcaption{
           font-size: 5px;
@@ -117,7 +117,7 @@
         .instructions{
           background:white;
           text-align:center;
-          font-size:25px;
+          font-size:18px;
         }
         
         #mystery li{
@@ -154,7 +154,7 @@
     </div>
     
     <form id="form1">
-   
+    <br>
         <div>
           <div class="divClass" id = "mystery">
             <label>

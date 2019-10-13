@@ -431,8 +431,8 @@ button {
   float: right;
 }
 
-/* avatar */
 
+/* avatar */
 .avatar {
   max-width: 960px;
   margin: 30px auto;
@@ -502,9 +502,6 @@ background-size: cover;
 background-repeat: no-repeat;
 background-position: center;
 }
-
-
-
 
 /* --user profile-- */
 
