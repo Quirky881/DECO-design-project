@@ -10,9 +10,12 @@
 
           <div class="flipbook-viewport">
           		<div class="flipbook">
-          			<div style="background-image:url(../View/Images/title-page.svg)" class="title">
+          			<div style="background-image:url(../View/Images/bookEntry1.pgn)" class="hard" id="turnon">
           				<h2>How the Water got to the Plains</h2>
-          			</div>
+					</div>
+
+					<div class="hard" style="background-color:white"></div>
+					  
           			<div class="onpage">
           				<div class="padding-style">
           					Way, way back in the first time, when everything was new, there was a group of Aboriginal people living on a mountain. It was a lovely place, but everyone was worried. It had not
@@ -165,7 +168,10 @@
           				<div class="padding-style">
           				But, a wonderful thing had happened. Wherever the water had leaked onto the plains, there were now beautiful billabongs, or waterholes. There was grass and flowers and lovely water lilies and then there were shrubs and trees. And soon, the birds came and everyone was happy because there was enough water for everyone.
           				</div>
-          			</div>
+					  </div>
+					  
+					<div class="hard" style="background-color:white" ></div>
+					<div class="hard" style="background-color:white"></div>
 
           		</div>
           </div>
@@ -207,7 +213,10 @@
 
       			// Auto center this flipbook
 
-      			autoCenter: true
+      			autoCenter: true，
+				
+
+				
 
       	});
       }
@@ -226,6 +235,7 @@
         document.getElementById("exit").onclick = function(){
         location.href = "../View/storyEntry.php";}
       }
+	  
 
 
       </script>
