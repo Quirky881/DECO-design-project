@@ -124,7 +124,7 @@ footer {
 
 /***************************Home*********************************/
 
-/* body {
+body {
   background-image: url(../Images/backgroundimg.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
@@ -166,6 +166,7 @@ button:hover {
   background: green;
   transition: all 0.8s ease;
 }
+
 
 
 /***************************Story book*********************************/
