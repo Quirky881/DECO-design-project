@@ -91,16 +91,20 @@
     </script>
     <style>
         .divClass {
-            border: 3px solid black;
-            font-size: 45px;
-            background-color: lightgray;
-            width: 20%;
-            padding: 5px;
-            display: inline-table;
+          border: 3px solid black;
+          font-size: 40px;
+          background-color: lightgray;
+          width: 20%;
+          padding: 5px;
+          display: inline-table;
+        }
+        .divClass ul {
+          list-style-type: none;
+          color:green;
         }
 
         li {
-            font-size: 30px;
+            font-size: 25px;
         }
         figcaption{
           font-size: 5px;
@@ -108,24 +112,58 @@
         }
         img{
           padding:1px;
+          border-radius:1em;
         }
         .instructions{
           background:white;
           text-align:center;
+          font-size:18px;
         }
-        /*li[data-value = "Koala"]{
-          color:red;
+        
+        #mystery li{
+          display:inline;
+          padding: 9px;
+          color:black;
         }
-        this works but it identifies animal not language
-        */
+        .instructions form{
+          padding-left:2%;
+        }
+        div form{
+          float:left;
+        }
+        lable {
+          padding:5px;
+        }
+
     </style>
-    <div class = "instructions"><em>Drag the Mystery words to the correct image</em></div>
+    <div class = "instructions"><em>Drag the Mystery words to the correct image</em>
+    <form>
+      <label for="Language">Language:</label>
+      <select name= "Language">
+        <option value="Yugara">Yugara</option>
+        <option value="Yugarabul">Yugarabul</option>
+      </select>
+    </form>
+    <form>
+      <label for="Topic">Topic:</label>
+      <select name= "Topic">
+        <option value="Animals">Animals</option>
+        <option value="Greetings">Greetings</option>
+      </select>
+    </form>
+    </div>
+    
     <form id="form1">
-        <div class="divClass">
-            Mystery
-                <ul id="source">
-                  <?php echo  $output;?>
-                </ul>
+    <br>
+        <div>
+          <div class="divClass" id = "mystery">
+            <label>
+            Mystery Words
+            </label>
+            <ul id="source">
+              <?php echo  $output;?>
+            </ul>
+          </div>
         </div>
         <div>
           <div class="divClass" id='div<?php echo $subjects[0];?>'>
@@ -183,5 +221,6 @@
             <ul id='<?php echo $subjects[2];?>'></ul>
           </div>
         </div>
+      </form>
   <?php include("footer.php"); ?>
 </html>
