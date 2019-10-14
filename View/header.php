@@ -37,10 +37,16 @@
               <span>Game</span>
             </div>
           </a>
-          <a class="col-2 blank" href="../View/dictionary.php">
+          <a class="col-1 blank" href="../View/dictionary.php">
             <div id="navicon" class="col-12<?php if($activePage == "dictionary") echo ' active'; ?>">
               <img class="navImgText" src="../View/Images/dictionaryIcon.svg" alt="Home">
               <span>Dictionary</span>
+            </div>
+          </a>
+          <a class="col-1 blank" href="../View/map.php">
+            <div id="navicon" class="col-12<?php if($activePage == "map") echo ' active'; ?>">
+              <img class="navImgText" src="../View/Images/dictionaryIcon.svg" alt="Home">
+              <span>Map</span>
             </div>
           </a>
           <a class="col-1 blank" href="../View/profile.php">

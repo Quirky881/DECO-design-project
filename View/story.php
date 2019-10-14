@@ -3,9 +3,9 @@
   <?php include("header.php"); ?>
 
     <div class="row main">
-	  <div class="col-1"></div>
-	
-      <div class="col-10">
+	  <div class="col-2"></div>
+
+      <div class="col-8">
         <div class="readbook">
 
           <div class="flipbook-viewport">
@@ -40,7 +40,7 @@
           						</div>
           					</div>
           				for a long, long time and they were very short of
-          				<div calss="flip-box-position" style="display:inline-block; " >
+          				<div calss="flip-box-position" style="display:inline-block;" >
           					<div class="flip-box">
           						<div class="flip-container" >
           							<div class="flipper">
@@ -171,16 +171,11 @@
           </div>
         </div>
 	  </div>
-	  <div class="col-1" id="exit" onclick="bookExit()">
-		<img src="../View/Images/closeButton.png" alt="close button">
-	</div>
+	  <div class="col-2" id="exit" >
+		    <img src="../View/Images/closeButton.png" alt="close button" onclick="bookExit()">
+    </div>
 	</div>
     </div>
-
-
-
-
-
 
       <script type="text/javascript">
 
@@ -223,11 +218,8 @@
       });
 
       function bookExit() {
-        document.getElementById("exit").onclick = function(){
+        // document.getElementById("exit").onclick = function(){
         location.href = "../View/storyEntry.php";}
-      }
-
-
+      // }
       </script>
-      <?php include("footer.php"); ?>
-</html>
+    <?php include("footer.php"); ?>
