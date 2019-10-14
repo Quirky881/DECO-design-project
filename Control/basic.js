@@ -1,5 +1,3 @@
-
-
 function addPage(page, book) {
 
 	var id, pages = book.turn('pages');
@@ -93,7 +91,29 @@ function isChrome() {
 
 
 
-function bookExit() {
-  document.getElementById("exit").onclick = function(){
-  location.href = "storyBook.html";}
+$(function () {
+	arr= window.location.href.split("#");
+	if(arr[1]){
+		$("#entry2").removeClass('hide');
+
+	}
+});
+
+function bookEntry(){
+	location.href = "story.php"
 }
+
+
+
+function bookEntry2() {
+	location.href = "story2.php"
+}
+
+
+
+
+
+
+
+
+

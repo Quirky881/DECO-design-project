@@ -3,9 +3,9 @@
   <?php include("header.php"); ?>
 
     <div class="row main">
-	  <div class="col-2"></div>
+	  <div class="col-1"></div>
 
-      <div class="col-8">
+      <div class="col-10">
         <div class="readbook">
 
           <div class="flipbook-viewport">
@@ -30,8 +30,9 @@
           									<div class="back">
           										<div id="back-img">
           											<div class="abori-word">
-          												<p>Ari</p>
-          												<p class="eng-meaning">English:Rain</p>
+          												
+														  <p class="eng-meaning">English:Rain</p>
+														  <p>Ari</p>
           											</div>
           										</div>
           									</div>
@@ -53,8 +54,9 @@
           								<div class="back">
           									<div id="back-img">
           										<div class="abori-word" >
-          											<p>Nguki</p>
-          											<p class="eng-meaning" >English:Water</p>
+          											
+													  <p class="eng-meaning" >English:Water</p>
+													  <p>Nguki</p>
           										</div>
           									</div>
           								</div>
@@ -81,8 +83,9 @@
           								<div class="back">
           									<div id="back-img">
           										<div class="abori-word">
-          											<p>Malu</p>
-          											<p class="eng-meaning">English:Sea</p>
+          											
+													  <p class="eng-meaning">English:Sea</p>
+													  <p>Malu</p>
           										</div>
           									</div>
           								</div>
@@ -117,8 +120,9 @@
           									<div class="back">
           										<div id="back-img">
           											<div class="abori-word">
-          												<p>Kazi</p>
-          												<p class="eng-meaning">English:children</p>
+          												
+														  <p class="eng-meaning">English:children</p>
+														  <p>Kazi</p>
           											</div>
           										</div>
           									</div>
@@ -165,14 +169,18 @@
           				<div class="padding-style">
           				But, a wonderful thing had happened. Wherever the water had leaked onto the plains, there were now beautiful billabongs, or waterholes. There was grass and flowers and lovely water lilies and then there were shrubs and trees. And soon, the birds came and everyone was happy because there was enough water for everyone.
           				</div>
-          			</div>
+					  </div>
+					  
+					  <div class="hard" ></div>
+				
 
           		</div>
           </div>
         </div>
 	  </div>
-	  <div class="col-2" id="exit" >
-		    <img src="../View/Images/closeButton.png" alt="close button" onclick="bookExit()">
+	  <div class="col-1" id="exit" >
+			<img src="../View/Images/closeButton.png" alt="close button" onclick="bookExit()">
+			<div id="point"><img src="images/Pointing.gif" alt="pointing" style="width: 15%;float: right;margin: 10% 0 0 0;"></div>
     </div>
 	</div>
     </div>
