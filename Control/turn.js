@@ -591,6 +591,15 @@ turnMethods = {
 
   range: function(page) {
 
+      if(page>=10){
+        document.getElementById("exit").onclick = function () {
+          location.href = "storyEntry.html#2";
+        };
+      }
+      if(page>1){
+        $("#point").css('display','none');
+      }
+
     var remainingPages, left, right, view,
       data = this.data();
 
