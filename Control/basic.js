@@ -29,7 +29,7 @@ function loadPage(page, pageElement) {
 	});
 
 	img.load(function() {
-		
+
 		// Set the size
 		$(this).css({width: '100%', height: '100%'});
 
@@ -38,7 +38,7 @@ function loadPage(page, pageElement) {
 		$(this).appendTo(pageElement);
 
 		// Remove the loader indicator
-		
+
 		pageElement.find('.loader').remove();
 	});
 
@@ -50,7 +50,7 @@ function loadPage(page, pageElement) {
 
 
 function loadLargePage(page, pageElement) {
-	
+
 	var img = $('<img />');
 
 	img.load(function() {
@@ -59,17 +59,17 @@ function loadLargePage(page, pageElement) {
 		$(this).css({width: '90%', height: '100%'});
 		$(this).appendTo(pageElement);
 		prevImg.remove();
-		
+
 	});
 
 	// Loadnew page
-	
+
 	img.attr('src', 'pages/' +  page + '-large.jpg');
 }
 
 
 function loadSmallPage(page, pageElement) {
-	
+
 	var img = pageElement.find('img');
 
 	img.css({width: '100%', height: '100%'});
@@ -90,20 +90,9 @@ function isChrome() {
 }
 
 
-
 $(function () {
 	arr= window.location.href.split("#");
-<<<<<<< HEAD
-	if(arr[1]){
-		$("#entry2").removeClass('hide');
-
-	}
-});
-
-function bookEntry(){
-	location.href = "story.php"
-}
-=======
+	console.log("the arguement is " + arr);
 	if(arr[1]==2){
 		$("#entry2").removeClass('hide');
 	}if(arr[1]==3){
@@ -113,29 +102,14 @@ function bookEntry(){
 });
 
 
->>>>>>> 35245849ee1baa4238560e5f39a5c3606028f86d
-
-
-
 function bookEntry2() {
-<<<<<<< HEAD
 	location.href = "story2.php"
-=======
-	location.href = "storyBook2.html";
 }
+
 function bookEntry(){
 	location.href = "storyBook.html";
 }
+
 function bookEntry3(){
 	alert("you already finish reading all stories!");
->>>>>>> 35245849ee1baa4238560e5f39a5c3606028f86d
 }
-
-
-
-
-
-
-
-
-

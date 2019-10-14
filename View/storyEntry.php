@@ -10,7 +10,6 @@
             <img src="../View/Images/title-page.svg" alt="title-page">
         </div>
 
-
         <div id="entry1">
             <img  src="../View/Images/bookEntry1.png" alt="bookEntry1" onclick="bookEntry()">
         </div>
@@ -26,14 +25,25 @@
     </div>
     <div class="col-0"></div>
   <script>
+    $(function () {
+      arr= window.location.href.split("#");
+      console.log("the arguement is " + arr);
+      if(arr[1]==2){
+        $("#entry2").removeClass('hide');
+      }if(arr[1]==3){
+        $("#entry2").removeClass('hide');
+        $("#entry3").removeClass('hide');
+      }
+    });
 
-function bookEntry(){
-	location.href = "story.php"
-}
 
-function bookEntry2() {
-	location.href = "story2.php"
-}
+    function bookEntry(){
+    	location.href = "story.php"
+    }
+
+    function bookEntry2() {
+    	location.href = "story2.php"
+    }
 
   </script>
 

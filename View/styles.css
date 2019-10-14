@@ -124,11 +124,11 @@ footer {
 
 /***************************Home*********************************/
 
-body {
-  background-image: url(../Images/backgroundimg.jpg);
-  background-repeat: no-repeat;
-  background-size: 100%;
-} */
+.HomeContent {
+	background-image: url(../View/Images/backgroundimg.jpg);
+	background-repeat: no-repeat;
+	height: 100%;
+}
 
 .manselect {
   display: flex;

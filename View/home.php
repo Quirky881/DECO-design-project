@@ -1,12 +1,6 @@
 <?php include("header.php"); ?>
-  <div class="content">
+  <div class="HomeContent">
     <style>
-          body {
-            background-image: url(../View/Images/backgroundimg.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-          } 
-
           .manselect {
             display: flex;
             justify-content: space-around;
@@ -26,19 +20,8 @@
             position: absolute;
             display: flex;
             justify-content: space-evenly;
-            flex-direction: column; 
+            flex-direction: column;
           }
-
-        /* .wordlist {
-            background: #b8e994;
-            width: 50%;
-            height: 30%;
-            border-radius: 20px;
-            text-align: center;
-            color: white;
-            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
-            cursor: pointer;
-          } */
 
           button {
             background: #b8e994;
@@ -50,7 +33,7 @@
             box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
             cursor: pointer;
             margin: 10px;
-          } 
+          }
 
           button:hover {
             background: green;

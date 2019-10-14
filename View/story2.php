@@ -201,7 +201,7 @@
 
       yepnope({
       	test : Modernizr.csstransforms,
-      	yep: ['../../Control/turn.js'],
+      	yep: ['../../Control/turn2.js'],
       	nope: ['../../Control/turn.html4.min.js'],
       	both: ['../View/styles.css'],
       	complete: loadApp
