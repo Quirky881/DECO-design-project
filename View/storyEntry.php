@@ -10,6 +10,7 @@
             <img src="../View/Images/title-page.svg" alt="title-page">
         </div>
 
+        
         <div id="entry1" onclick="bookEntry()">
             <img  src="../View/Images/bookEntry1.png" alt="bookEntry1">
         </div>
@@ -17,6 +18,10 @@
         <div id="entry2" onclick="bookEntry2()" class="hide">
             <img  src="../View/RainbowSerpent.png" alt="bookEntry2">
         </div>
+
+        <div id="entry3" onclick="bookEntry3()" class="hide">
+                <img  src="../View/Aboriginals-boomerang.png" alt="bookEntry2">
+            </div>
     </div>
     </div>
     <div class="col-0"></div>

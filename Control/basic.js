@@ -93,6 +93,7 @@ function isChrome() {
 
 $(function () {
 	arr= window.location.href.split("#");
+<<<<<<< HEAD
 	if(arr[1]){
 		$("#entry2").removeClass('hide');
 
@@ -102,11 +103,32 @@ $(function () {
 function bookEntry(){
 	location.href = "story.php"
 }
+=======
+	if(arr[1]==2){
+		$("#entry2").removeClass('hide');
+	}if(arr[1]==3){
+		$("#entry2").removeClass('hide');
+		$("#entry3").removeClass('hide');
+	}
+});
+
+
+>>>>>>> 35245849ee1baa4238560e5f39a5c3606028f86d
 
 
 
 function bookEntry2() {
+<<<<<<< HEAD
 	location.href = "story2.php"
+=======
+	location.href = "storyBook2.html";
+}
+function bookEntry(){
+	location.href = "storyBook.html";
+}
+function bookEntry3(){
+	alert("you already finish reading all stories!");
+>>>>>>> 35245849ee1baa4238560e5f39a5c3606028f86d
 }
 
 

@@ -155,17 +155,6 @@
           				</div>
           			</div>
 
-          			<div class="onpage">
-          				<div class="padding-style">
-          				So the Wonmutta, the clever man, made some very strong magic and Weeree was changed into the very first emu. He went running down the mountain, out onto the plains, in shame. Walawidbit was changed into the very first blue-tongued lizard and he crawled away to hide in the rocks.
-          				</div>
-          			</div>
-
-          			<div class="onpage">
-          				<div class="padding-style">
-          				But, a wonderful thing had happened. Wherever the water had leaked onto the plains, there were now beautiful billabongs, or waterholes. There was grass and flowers and lovely water lilies and then there were shrubs and trees. And soon, the birds came and everyone was happy because there was enough water for everyone.
-          				</div>
-          			</div>
 
           		</div>
           </div>
@@ -218,9 +207,8 @@
       	complete: loadApp
       });
 
-      function bookExit() {
-        // document.getElementById("exit").onclick = function(){
-        location.href = "../View/storyEntry.php";}
-      // }
+	  function bookExit() {
+  window.location.href = "storyEntry.html#2";
+}
       </script>
     <?php include("footer.php"); ?>

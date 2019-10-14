@@ -127,8 +127,8 @@ footer {
 /* body {
   background-image: url(../Images/backgroundimg.jpg);
   background-repeat: no-repeat;
-  background-size: 100%;
-} */
+  background-size: cover;
+} 
 
 .manselect {
   display: flex;
@@ -151,7 +151,7 @@ footer {
   flex-direction: column;
 }
 
-/* button {
+button {
   background: #b8e994;
   width: 100%;
   height: 150%;
@@ -160,12 +160,12 @@ footer {
   color: white;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
   cursor: pointer;
-} */
+} 
 
 button:hover {
   background: green;
   transition: all 0.8s ease;
-}
+} */
 
 
 /***************************Story book*********************************/
@@ -532,6 +532,22 @@ background-position: center;
 	border: blue;
 	margin: 24% 0 0 43.2%;
 	cursor: pointer;
+
+	
+}
+
+#entry2{
+	z-index: 1000;
+	border: rgb(3, 146, 39);
+	margin: 30% 0 0 60%;
+	cursor: pointer;
+}
+
+#entry3{
+	z-index: 1000;
+	border: rgb(3, 146, 39);
+	margin: 40% 0 0 10%;
+	cursor: pointer;
 }
 
 
@@ -565,6 +581,12 @@ background-position: center;
 #entry2 img:hover{
     transform: scale(1.1);
     animation-play-state: paused;
-}
 
-/* ---storyEntry-- */
+#entry3 img{
+	width: 12vh;
+	border-radius: 100%;
+	border:0.7vh solid rgb(216, 216, 216);
+	box-shadow: 0 0 0 0.8vh rgb(223, 72, 13), 0 0 0 1.5vh rgb(173, 114, 4);
+	position: relative;
+	transition: transform .2s;
+}
