@@ -6,7 +6,7 @@
 
 
     <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
     <script>
 
         //Setup the map as per the Leaflet instructions
@@ -22,7 +22,6 @@
             id: "mapbox.streets"
         }).addTo(myMap);
 
-        // var jsonData = <?php echo $data; ?>;
         //
         // $.each(jsonData.result.records, function(recordKey, recordValue) {
         //     var spatial = recordValue["dcterms:spatial"];
@@ -34,18 +33,15 @@
         //     if (latLong.length == 2) {
         //     var latLong = latLong[1].trim().split(",");
         //
-        //     var lat = latLong[0];
-        //     var lng = latLong[1];
-        //     var marker = L.marker([lat, lng]).addTo(myMap);
-        //     marker.on("click", function(event) {
-        //         myMap.setView([lat, lng], 14);
-        //         var aTag = $("section[id='" + recordValue["dc:title"] + "']");
-        //         $('html,body').animate({scrollTop: aTag.offset().top},'slow');
-        //     })
-        //     marker.bindPopup("<h3>" +
-        //     recordValue["dc:title"] + "</h3><p>" +
-        //     recordValue["dc:description"] + "</p><p><em>" + spatial + "</em></p>");
-        //     }
+            var lat = -27.47;
+            var lng = 153.02;
+            var marker = L.marker([lat, lng]).addTo(myMap);
+            marker.on("click", function(event) {
+                myMap.setView([lat, lng], 14);
+            });
+            marker.bindPopup("<h3>Yugara</h3><p></p><p><em>Latitude: " + lat + ", Longitude: " + lng + "</em></p>");
+
+            // }
         // });
     </script>
 <?php include("footer.php"); ?>
