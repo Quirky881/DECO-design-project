@@ -175,39 +175,7 @@
             <ul id='<?php echo $subjects[0];?>'></ul>
           </div>
 
-        #mystery li{
-          display:inline;
-          padding: 9px;
-          color:black;
-        }
-        .instructions form{
-          padding-left:2%;
-        }
-        div form{
-          float:left;
-        }
-        lable {
-          padding:5px;
-        }
-
-    </style>
-    <div class="row main">
-      <div class = "instructions"><em>Drag the Mystery words to the correct image</em>
-      <form>
-        <label for="Language">Language:</label>
-        <select name= "Language">
-          <option value="Yugara">Yugara</option>
-          <option value="Yugarabul">Yugarabul</option>
-        </select>
-      </form>
-      <form>
-        <label for="Topic">Topic:</label>
-        <select name= "Topic">
-          <option value="Animals">Animals</option>
-          <option value="Greetings">Greetings</option>
-        </select>
-      </form>
-      </div>
+        
 
       <form id="form1">
       <br>
