@@ -365,73 +365,6 @@ width: 200px;
 
 /*----user profile---- */
 
-fieldset {
-  margin-bottom: 2em;
-  padding: 1em 2em;
-  border: 0;
-  border-radius: 10px;
-  background: white;
-  display: block;
-}
-
-legend {
-  text-transform: uppercase;
-  font-size: 1em;
-  font-weight: bold;
-  letter-spacing: 2px;
-  padding: 0.5em 1em;
-  margin: 0 -1em;
-  border-radius: 10px;
-  color: white;
-  background: rgb(165, 50, 5);
-}
-
-fieldset .form-item {
-  display: flex;
-
-}
-
-fieldset .form-item > label {
-  font-weight: bold;
-  width: 25%;
-  padding-right: 2em;
-  text-align: right;
-  text-shadow: rgba(0,0,0,0.3) 3px 3px 5px;
-}
-fieldset .form-item .form-element {
-  width: 60%;
-}
-
-fieldset .form-item .form-element > label {
-display: block;
-}
-
-input[type=text], textarea {
-  box-shadow: rgba(0,0,0,0.15) 3px 3px 5px;
-  background: white;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 10px 15px;
-  width: 100%;
-  font-size: 0.9em;
-}
-
-input[type=text]:focus {
-  border-color:rgb(165,50,5);
-}
-
-button {
-  font-weight: bold;
-  font-size: 1.3em;
-  background: black;
-  padding: 0.5em 1em;
-  color: white;
-  border: 0;
-  border-radius: 10%;
-  background: rgb(165, 50, 5);
-  cursor: pointer;
-  float: right;
-}
 
 /* avatar */
 
@@ -523,6 +456,7 @@ background-position: center;
 
 .container {
 	position: relative;
+	display: flex;
   }
 
 #entry,
@@ -536,7 +470,21 @@ background-position: center;
 	margin: 27% 0 0 38%;
 	cursor: pointer;
 
+	
+}
 
+#entry2{
+	z-index: 1000;
+	border: rgb(3, 146, 39);
+	margin: 30% 0 0 60%;
+	cursor: pointer;
+}
+
+#entry3{
+	z-index: 1000;
+	border: rgb(3, 146, 39);
+	margin: 40% 0 0 10%;
+	cursor: pointer;
 }
 
 #entry1 img{
@@ -548,10 +496,22 @@ background-position: center;
 	transition: transform .2s;
 }
 
-/* maggify when hover */
-#entry1 img:hover{
-    transform: scale(1.1);
-    animation-play-state: paused;
+#entry2 img{
+	width: 12vh;
+	border-radius: 100%;
+	border:0.7vh solid rgb(216, 216, 216);
+	box-shadow: 0 0 0 0.8vh rgb(223, 72, 13), 0 0 0 1.5vh rgb(173, 114, 4);
+	position: relative;
+	transition: transform .2s;
+}
+
+#entry3 img{
+	width: 12vh;
+	border-radius: 100%;
+	border:0.7vh solid rgb(216, 216, 216);
+	box-shadow: 0 0 0 0.8vh rgb(223, 72, 13), 0 0 0 1.5vh rgb(173, 114, 4);
+	position: relative;
+	transition: transform .2s;
 }
 
 /* ---storyEntry-- */
