@@ -226,13 +226,16 @@ turnMethods = {
 
     if (page) {
       
-      if (page==lastPage)
+      if (page==lastPage){
         incPages = true;
+
+      }
+
       else if (page>lastPage)
         throw turnError('Page "'+page+'" cannot be inserted');
 
     } else {
-      
+
       page = lastPage;
       incPages = true;
 
@@ -272,14 +275,13 @@ turnMethods = {
       // Remove pages out of range
       turnMethods._removeFromDOM.call(this);
     }
-
     return this;
   },
 
   // Adds a page
 
   _addPage: function(page) {
-    
+
     var data = this.data(),
       element = data.pageObjs[page];
 
@@ -344,7 +346,7 @@ turnMethods = {
   // Centers the flipbook
 
   center: function(page) {
-    
+
     var data = this.data(),
       size = $(this).turn('size'),
       left = 0;
@@ -428,7 +430,7 @@ turnMethods = {
   // Sets and gets the zoom value
 
   zoom: function(newZoom) {
-    
+
     var data = this.data();
 
     if (typeof(newZoom)=='number') {
@@ -590,16 +592,14 @@ turnMethods = {
   //   **  **  --   **  **
 
   range: function(page) {
-
-      if(page>=10){
-        document.getElementById("exit").onclick = function () {
-          location.href = "storyEntry.html#2";
-        };
-      }
-      if(page>1){
-        $("#point").css('display','none');
-      }
-
+    if(page>=6){
+      document.getElementById("exit").onclick = function () {
+        location.href = "storyEntry.html#3";
+      };
+    }
+    if(page>1){
+      $("#point").css('display','none');
+    }
     var remainingPages, left, right, view,
       data = this.data();
 
@@ -637,7 +637,7 @@ turnMethods = {
   // Detects if a page is within the range of `pagesInDOM` from the current view
 
   _necessPage: function(page) {
-    
+
     if (page===0)
       return true;
 
@@ -917,7 +917,7 @@ turnMethods = {
   // Gets the current activated corner
 
   corner: function() {
-    
+
     var corner,
       page,
       data = this.data();
@@ -2943,7 +2943,6 @@ flipMethods = {
   },
 
   _eventEnd: function() {
-
     var data = this.data().f,
       corner = data.corner;
 
@@ -3028,7 +3027,7 @@ function dec(that, methods, args) {
 // Attributes for a layer
 
 function divAtt(top, left, zIndex, overf) {
-    
+
   return {'css': {
     position: 'absolute',
     top: top,
@@ -3072,7 +3071,7 @@ function deg(radians) {
 // Gets a 2D point
 
 function point2D(x, y) {
-  
+
   return {x: x, y: y};
 
 }
@@ -3199,7 +3198,6 @@ function gradient(obj, p0, p1, colors, numColors) {
 // Triggers an event
 
 function trigger(eventName, context, args) {
-
   var event = $.Event(eventName);
   context.trigger(event, args);
   if (event.isDefaultPrevented())

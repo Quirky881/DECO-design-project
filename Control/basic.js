@@ -93,7 +93,26 @@ function isChrome() {
 
 
 
-function bookExit() {
-  document.getElementById("exit").onclick = function(){
-  location.href = "storyBook.html";}
+$(function () {
+	arr= window.location.href.split("#");
+	if(arr[1]==2){
+		$("#entry2").removeClass('hide');
+	}if(arr[1]==3){
+		$("#entry2").removeClass('hide');
+		$("#entry3").removeClass('hide');
+	}
+});
+
+
+
+
+
+function bookEntry2() {
+	location.href = "storyBook2.html";
+}
+function bookEntry(){
+	location.href = "storyBook.html";
+}
+function bookEntry3(){
+	alert("you already finish reading all stories!");
 }
