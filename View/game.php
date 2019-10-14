@@ -119,7 +119,9 @@
           text-align:center;
           font-size:18px;
         }
-        
+        #mystery{
+			margin-bottom:2%;
+		}
         #mystery li{
           display:inline;
           padding: 9px;
