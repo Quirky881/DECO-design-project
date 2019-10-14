@@ -151,34 +151,10 @@
         <option value="Greetings">Greetings</option>
       </select>
     </form>
-    </div>
-    
-    <form id="form1">
-    <br>
-        <div>
-          <div class="divClass" id = "mystery">
-            <label>
-            Mystery Words
-            </label>
-            <ul id="source">
-              <?php echo  $output;?>
-            </ul>
-          </div>
-        </div>
-        <div>
-          <div class="divClass" id='div<?php echo $subjects[0];?>'>
-            <?php echo $subjects[0]?><br>
-            <figure>
-              <img src="../View/Images/Koala.jpg" alt = "Koala"><br>
-              <figcaption>https://www.flickr.com/photos/98119192@N05/9212325177</figcaption>
-            </figure> 
-            <ul id='<?php echo $subjects[0];?>'></ul>
-          </div>
-
-        
+    </div>      
 
       <form id="form1">
-      <br>
+		<br>
           <div>
             <div class="divClass" id = "mystery">
               <label>
