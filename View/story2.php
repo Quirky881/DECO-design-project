@@ -162,7 +162,7 @@
 	  </div>
 	  <div class="col-1" id="exit" >
 			<img src="../View/Images/closeButton.png" alt="close button" onclick="bookExit()">
-			<div id="point"><img src="images/Pointing.gif" alt="pointing" style="width: 15%;float: right;margin: 10% 0 0 0;"></div>
+			<div id="point"><img src="../View/Images/Pointing.gif" alt="pointing" style="width: 15%;float: right;margin: 10% 0 0 0;"></div>
     </div>
 	</div>
     </div>
@@ -208,7 +208,7 @@
       });
 
 	  function bookExit() {
-  window.location.href = "storyEntry.html#2";
+  window.location.href = "storyEntry.php#2";
 }
       </script>
     <?php include("footer.php"); ?>

@@ -30,7 +30,7 @@
           									<div class="back">
           										<div id="back-img">
           											<div class="abori-word">
-          												
+
 														  <p class="eng-meaning">English:Rain</p>
 														  <p>Ari</p>
           											</div>
@@ -54,7 +54,7 @@
           								<div class="back">
           									<div id="back-img">
           										<div class="abori-word" >
-          											
+
 													  <p class="eng-meaning" >English:Water</p>
 													  <p>Nguki</p>
           										</div>
@@ -83,7 +83,7 @@
           								<div class="back">
           									<div id="back-img">
           										<div class="abori-word">
-          											
+
 													  <p class="eng-meaning">English:Sea</p>
 													  <p>Malu</p>
           										</div>
@@ -120,7 +120,7 @@
           									<div class="back">
           										<div id="back-img">
           											<div class="abori-word">
-          												
+
 														  <p class="eng-meaning">English:children</p>
 														  <p>Kazi</p>
           											</div>
@@ -170,9 +170,9 @@
           				But, a wonderful thing had happened. Wherever the water had leaked onto the plains, there were now beautiful billabongs, or waterholes. There was grass and flowers and lovely water lilies and then there were shrubs and trees. And soon, the birds came and everyone was happy because there was enough water for everyone.
           				</div>
 					  </div>
-					  
+
 					  <div class="hard" ></div>
-				
+
 
           		</div>
           </div>
@@ -180,7 +180,7 @@
 	  </div>
 	  <div class="col-1" id="exit" >
 			<img src="../View/Images/closeButton.png" alt="close button" onclick="bookExit()">
-			<div id="point"><img src="images/Pointing.gif" alt="pointing" style="width: 15%;float: right;margin: 10% 0 0 0;"></div>
+			<div id="point"><img src="../View/Images/Pointing.gif" alt="pointing" style="width: 15%;float: right;margin: 10% 0 0 0;"></div>
     </div>
 	</div>
     </div>
