@@ -7,7 +7,7 @@
   $languages = "('Yugara')";
   $Topic = "";
   if(isset($_GET['Language']) && $_GET['Language'] != "") {
-    $languages = "('" . $_GET['Language'] . ")'";
+    $languages = "('" . $_GET['Language'] . "')";
   }
   if(isset($_GET['Topic']) && $_GET['Topic'] != "") {
     $Topic = $_GET['Topic'];
@@ -265,4 +265,7 @@
           </div>
         </div>
       </form>
+      <div>
+      <?php echo $languages;?>
+      </div>
   <?php include("footer.php"); ?>
