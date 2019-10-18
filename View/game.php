@@ -198,7 +198,7 @@
         <option value="Animals">Animals</option>
         <option value="Greetings">Greetings</option>
       </select>
-      <input type="submit" value="Submit">
+      <input type="submit" value="Go">
     </form>
     </div>      
 
