@@ -165,6 +165,7 @@
         }
         div form{
           float:left;
+          padding-bottom:1%
         }
         lable {
           padding:5px;
