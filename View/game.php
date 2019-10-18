@@ -3,14 +3,22 @@
   <?php include("header.php"); ?>
 
   <?php
-
+  // Get filter form value from URL
+  $languages = "('Yugara')";
+  $Topic = "";
+  if(isset($_GET['Language']) && $_GET['Language'] != "") {
+    $languages = "('" . $_GET['Language'] . ")'";
+  }
+  if(isset($_GET['Topic']) && $_GET['Topic'] != "") {
+    $Topic = $_GET['Topic'];
+  }
+  
   //database stuff
   $servername = "localhost";
   $username = "root";
   $password = "root";
   $dbname = "deco7180_project";
   $output = "";
-  $languages = "('Yugara')";
   $subjects = array('Koala','Kangaroo','Shark','Emu','SugarGlider','Crow');
 
   // Create connection
@@ -178,13 +186,12 @@
         <option value="Yugara">Yugara</option>
         <option value="Yugarabul">Yugarabul</option>
       </select>
-    </form>
-    <form>
       <label for="Topic">Topic:</label>
       <select name= "Topic">
         <option value="Animals">Animals</option>
         <option value="Greetings">Greetings</option>
       </select>
+      <input type="submit" value="Submit">
     </form>
     </div>      
 
