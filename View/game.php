@@ -165,7 +165,6 @@
         }
         div form{
           float:left;
-          padding-bottom:1%
         }
         lable {
           padding:5px;
@@ -229,7 +228,7 @@
               <ul id='<?php echo $subjects[2];?>'></ul>
             </div>
           </div>
-          <div>
+          <div style = "padding-bottom:15px;">
             <div class="divClass"  id='div<?php echo $subjects[3];?>'>
               <?php echo $subjects[3]?><br>
               <figure>
