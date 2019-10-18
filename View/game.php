@@ -23,7 +23,7 @@
   //echo "Connected successfully"."<br>";
 
 
-  $sql = "SELECT word, english_meaning FROM Words WHERE language IN " . $languages . "AND english_meaning IN ('" . $subjects[0] . "','" . $subjects[1] . "','" .$subjects[2] . "') ORDER BY word ASC";
+  $sql = "SELECT word, english_meaning FROM Words WHERE language IN " . $languages . "AND english_meaning IN ('" . $subjects[0] . "','" . $subjects[1] . "','" .$subjects[2] . "','" .$subjects[3] . "','" .$subjects[4] . "','" .$subjects[5] . "') ORDER BY word ASC";
 
   //echo $sql."<br>";
   $result = $conn->query($sql);
