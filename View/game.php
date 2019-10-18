@@ -10,8 +10,8 @@
   $password = "root";
   $dbname = "deco7180_project";
   $output = "";
-  $languages = "('Yugara', 'Yugarabul')";
-  $subjects = array('Koala','Kangaroo','Shark');
+  $languages = "('Yugara')";
+  $subjects = array('Koala','Kangaroo','Shark','Emu','Sugar Glider','Crow');
 
   // Create connection
   $conn = new mysqli($servername, $username, $password, $dbname);
@@ -43,9 +43,15 @@
   $divOne = '#div'.$subjects[0];
   $divTwo = '#div'.$subjects[1];
   $divThree = '#div'.$subjects[2];
+  $divFour = '#div'.$subjects[3];
+  $divFive = '#div'.$subjects[4];
+  $divSix = '#div'.$subjects[5];
   $liOne = '#'.$subjects[0];
   $liTwo = '#'.$subjects[1];
   $liThree = '#'.$subjects[2];
+  $liFour = '#'.$subjects[3];
+  $liFive = '#'.$subjects[4];
+  $liSix = '#'.$subjects[5];
   ?>
 
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
@@ -54,12 +60,21 @@
         var animalOne = '<?php echo $subjects[0];?>'
         var animalTwo = '<?php echo $subjects[1];?>'
         var animalThree = '<?php echo $subjects[2];?>'
+        var animalFour = '<?php echo $subjects[3];?>'
+        var animalFive = '<?php echo $subjects[4];?>'
+        var animalSix = '<?php echo $subjects[5];?>'
         var divOne = '<?php echo $divOne;?>'
         var divTwo = '<?php echo $divTwo;?>'
         var divThree = '<?php echo $divThree;?>'
+        var divFour = '<?php echo $divFour;?>'
+        var divFive = '<?php echo $divFive;?>'
+        var divSix = '<?php echo $divSix;?>'
         var liOne = '<?php echo $liOne;?>'
         var liTwo = '<?php echo $liTwo;?>'
         var liThree = '<?php echo $liThree;?>'
+        var liFour = '<?php echo $liFour;?>'
+        var liFive = '<?php echo $liFive;?>'
+        var liSix = '<?php echo $liSix;?>'
 
         $(document).ready(function () {
             $('#source li').draggable({
@@ -85,6 +100,24 @@
                 accept: "li[data-value='<?php echo $subjects[2];?>']",
                 drop: function (event, ui) {
                     $(liThree).append(ui.draggable);
+                }
+            });
+            $(divFour).droppable({
+                accept: "li[data-value='<?php echo $subjects[3];?>']",
+                drop: function (event, ui) {
+                    $(liFour).append(ui.draggable);
+                }
+            });
+            $(divFive).droppable({
+                accept: "li[data-value='<?php echo $subjects[4];?>']",
+                drop: function (event, ui) {
+                    $(liFive).append(ui.draggable);
+                }
+            });
+            $(divSix).droppable({
+                accept: "li[data-value='<?php echo $subjects[5];?>']",
+                drop: function (event, ui) {
+                    $(liSix).append(ui.draggable);
                 }
             });
         });
@@ -196,31 +229,31 @@
             </div>
           </div>
           <div>
-            <div class="divClass" id='1'>
-              <?php echo $subjects[2]?><br>
+            <div class="divClass"  id='div<?php echo $subjects[3];?>'>
+              <?php echo $subjects[3]?><br>
               <figure>
-                <img src="../View/Images/Shark.jpg" alt = "Shark"><br>
-                <figcaption>https://www.flickr.com/photos/skymind25/79609238</figcaption>
+                <img src="../View/Images/Emu.jpg" alt = "Emu"><br>
+                <figcaption>https://www.flickr.com/photos/iansand/27404702110</figcaption>
               </figure>
-              <ul id='<?php echo $subjects[2];?>'></ul>
+              <ul id='<?php echo $subjects[3];?>'></ul>
             </div>
 
-            <div class="divClass" id='2'>
-              <?php echo $subjects[2]?><br>
+            <div class="divClass"  id='div<?php echo $subjects[4];?>'>
+              <?php echo $subjects[4]?><br>
               <figure>
-                <img src="../View/Images/Shark.jpg" alt = "Shark"><br>
-                <figcaption>https://www.flickr.com/photos/skymind25/79609238</figcaption>
+                <img src="../View/Images/Sugar_Glider.jpg" alt = "Sugar Glider"><br>
+                <figcaption>https://www.flickr.com/photos/27229185@N05/2541416661</figcaption>
               </figure>
-              <ul id='<?php echo $subjects[2];?>'></ul>
+              <ul id='<?php echo $subjects[4];?>'></ul>
             </div>
 
-            <div class="divClass" id='3'>
-              <?php echo $subjects[2]?><br>
+            <div class="divClass"  id='div<?php echo $subjects[5];?>'>
+              <?php echo $subjects[5]?><br>
               <figure>
-                <img src="../View/Images/Shark.jpg" alt = "Shark"><br>
-                <figcaption>https://www.flickr.com/photos/skymind25/79609238</figcaption>
+                <img src="../View/Images/Crow.jpg" alt = "Crow"><br>
+                <figcaption>https://www.flickr.com/photos/dulvariprestige/4631643994</figcaption>
               </figure>
-              <ul id='<?php echo $subjects[2];?>'></ul>
+              <ul id='<?php echo $subjects[5];?>'></ul>
             </div>
           </div>
         </div>
