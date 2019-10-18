@@ -113,8 +113,26 @@
 
   if($filter) {
     $sql = "SELECT word, english_meaning, language, pronounced FROM Words WHERE language ="."'".$filter."'";
-  } else  {
+    if($filter2) {
+      $sql.= " AND english_meaning LIKE '%".$filter2."%'";
+    }
+    if($filter3) {
+        $sql.= " AND word LIKE '%".$filter3."%'";
+    }
+    } 
+  else  {
     $sql = "SELECT word, english_meaning, pronounced, language FROM Words";
+    if($filter2) {
+      $sql.= " WHERE english_meaning LIKE '%".$filter2."%'";
+      if($filter3) {
+        $sql.= " AND word LIKE '%".$filter3."%'";
+      }
+    }
+    else{
+      if($filter3) {
+        $sql.= " WHERE engwordlish_meaning LIKE '%".$filter3."%'";
+      }
+    }
   }
   //echo $sql."<br>";
   $result = $conn->query($sql);
