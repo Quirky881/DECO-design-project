@@ -134,7 +134,7 @@
         .divClass {
           border: 3px solid black;
           font-size: 40px;
-          background-color: lightgray;
+          background-color: rgb(247, 236, 202);
           width: 20%;
           padding: 5px;
           display: inline-table;
