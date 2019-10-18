@@ -182,14 +182,14 @@
 
     <?php 
     if($languages == "('Yugara')"){
-      $select = "<select name= 'Language'><option value='Yugara' selected='selected'>Yugara</option><option value='Yugarabul'>Yugarabul</option></select>"
+      $select = "<select name= 'Language'><option value='Yugara' selected='selected'>Yugara</option><option value='Yugarabul'>Yugarabul</option></select>";
     }
     else{
-      $select = "<select name= 'Language'><option value='Yugara'>Yugara</option><option value='Yugarabul' selected='selected'>Yugarabul</option></select>"
+      $select = "<select name= 'Language'><option value='Yugara'>Yugara</option><option value='Yugarabul' selected='selected'>Yugarabul</option></select>";
     }
     ?>
 
-    <div class = "instructions"><em>Drag the Mystery words to the correct image</em>
+    <div class = "instructions" style = "padding-bottom:5px"><em>Drag the Mystery words to the correct image</em>
     <form>
       <label for="Language">Language:</label>
       <?php echo  $select;?>
