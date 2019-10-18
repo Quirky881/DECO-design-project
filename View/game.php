@@ -258,12 +258,4 @@
           </div>
         </div>
       </form>
-      <div>
-      <?php echo $subjects[4];?>
-      <?php echo  $divFive;?>
-      <?php echo  $liFive;?>
-      <?php echo $subjects[3];?>
-      <?php echo  $divFour;?>
-      <?php echo  $liFour;?>
-      </div>
   <?php include("footer.php"); ?>
