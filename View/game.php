@@ -177,15 +177,22 @@
         lable {
           padding:5px;
         }
-
+    
     </style>
+
+    <?php 
+    if($languages == "('Yugara')"){
+      $select = "<select name= 'Language'><option value='Yugara' selected='selected'>Yugara</option><option value='Yugarabul'>Yugarabul</option></select>"
+    }
+    else{
+      $select = "<select name= 'Language'><option value='Yugara'>Yugara</option><option value='Yugarabul' selected='selected'>Yugarabul</option></select>"
+    }
+    ?>
+
     <div class = "instructions"><em>Drag the Mystery words to the correct image</em>
     <form>
       <label for="Language">Language:</label>
-      <select name= "Language">
-        <option value="Yugara">Yugara</option>
-        <option value="Yugarabul">Yugarabul</option>
-      </select>
+      <?php echo  $select;?>
       <label for="Topic">Topic:</label>
       <select name= "Topic">
         <option value="Animals">Animals</option>
@@ -265,7 +272,4 @@
           </div>
         </div>
       </form>
-      <div>
-      <?php echo $languages;?>
-      </div>
   <?php include("footer.php"); ?>
