@@ -189,7 +189,7 @@
     }
     ?>
 
-    <div class = "instructions" style = "padding-bottom:5px"><em>Drag the Mystery words to the correct image</em>
+    <div class = "instructions" style = "padding-bottom:5px">
     <form>
       <label for="Language">Language:</label>
       <?php echo  $select;?>
@@ -209,6 +209,7 @@
               <label>
               Mystery Words
               </label>
+              <em>Drag the Mystery words to the correct image</em>
               <ul id="source">
                 <?php echo  $output;?>
               </ul>
