@@ -11,7 +11,7 @@
   $dbname = "deco7180_project";
   $output = "";
   $languages = "('Yugara')";
-  $subjects = array('Koala','Kangaroo','Shark','Emu','Sugar Glider','Crow');
+  $subjects = array('Koala','Kangaroo','Shark','Emu','SugarGlider','Crow');
 
   // Create connection
   $conn = new mysqli($servername, $username, $password, $dbname);
@@ -23,14 +23,14 @@
   //echo "Connected successfully"."<br>";
 
 
-  $sql = "SELECT word, english_meaning FROM Words WHERE language IN " . $languages . "AND english_meaning IN ('" . $subjects[0] . "','" . $subjects[1] . "','" .$subjects[2] . "','" .$subjects[3] . "','" .$subjects[4] . "','" .$subjects[5] . "') ORDER BY word ASC";
+  $sql = "SELECT word, english_meaning FROM Words WHERE language IN " . $languages . "AND english_meaning IN ('" . $subjects[0] . "','" . $subjects[1] . "','" .$subjects[2] . "','" .$subjects[3] . "','Sugar Glider" . "','" .$subjects[5] . "') ORDER BY word ASC";
 
   //echo $sql."<br>";
   $result = $conn->query($sql);
   if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
-      $output.= "<li data-value='". $row["english_meaning"] ."'>" . $row["word"]. "</li>";
+      $output.= "<li data-value='". str_replace(' ', '', $row["english_meaning"]) ."'>" . $row["word"]. "</li>";
       //$output.= "<li data-value='Koala'>" . $row["word"]. "</li>";
     }
   } else {
@@ -258,4 +258,12 @@
           </div>
         </div>
       </form>
+      <div>
+      <?php echo $subjects[4];?>
+      <?php echo  $divFive;?>
+      <?php echo  $liFive;?>
+      <?php echo $subjects[3];?>
+      <?php echo  $divFour;?>
+      <?php echo  $liFour;?>
+      </div>
   <?php include("footer.php"); ?>
