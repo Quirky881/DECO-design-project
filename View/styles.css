@@ -585,7 +585,7 @@ background-position: center;
 #entry1 img:hover,
 #entry2 img:hover,
 #entry3 img:hover,
-#exit img:hover{
+#exitbutton img:hover{
     transform: scale(1.1);
     animation-play-state: paused;
 }
