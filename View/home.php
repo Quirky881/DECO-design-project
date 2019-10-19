@@ -1,6 +1,6 @@
 <?php include("header.php"); ?>
   <div class="HomeContent">
-    <style>
+<style>
 * {
     box-sizing: border-box;
     margin: 0;
@@ -223,7 +223,8 @@ a {
     background-color: #00cec9;
     cursor: pointer;
 }  
-    </style>
+</style>
+
       <div class="row main" style="position: absolute; top: 10%; width: 100%;">
         <div class="col-3">
         <div class="col-3"></div>
