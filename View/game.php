@@ -3,15 +3,23 @@
   <?php include("header.php"); ?>
 
   <?php
-
+  // Get filter form value from URL
+  $languages = "('Yugara')";
+  $Topic = "";
+  if(isset($_GET['Language']) && $_GET['Language'] != "") {
+    $languages = "('" . $_GET['Language'] . "')";
+  }
+  if(isset($_GET['Topic']) && $_GET['Topic'] != "") {
+    $Topic = $_GET['Topic'];
+  }
+  
   //database stuff
   $servername = "localhost";
   $username = "root";
   $password = "root";
   $dbname = "deco7180_project";
   $output = "";
-  $languages = "('Yugara', 'Yugarabul')";
-  $subjects = array('Koala','Kangaroo','Shark');
+  $subjects = array('Koala','Kangaroo','Shark','Emu','SugarGlider','Crow');
 
   // Create connection
   $conn = new mysqli($servername, $username, $password, $dbname);
@@ -23,14 +31,14 @@
   //echo "Connected successfully"."<br>";
 
 
-  $sql = "SELECT word, english_meaning FROM Words WHERE language IN " . $languages . "AND english_meaning IN ('" . $subjects[0] . "','" . $subjects[1] . "','" .$subjects[2] . "') ORDER BY word ASC";
+  $sql = "SELECT word, english_meaning FROM Words WHERE language IN " . $languages . "AND english_meaning IN ('" . $subjects[0] . "','" . $subjects[1] . "','" .$subjects[2] . "','" .$subjects[3] . "','Sugar Glider" . "','" .$subjects[5] . "') ORDER BY word ASC";
 
   //echo $sql."<br>";
   $result = $conn->query($sql);
   if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
-      $output.= "<li data-value='". $row["english_meaning"] ."'>" . $row["word"]. "</li>";
+      $output.= "<li data-value='". str_replace(' ', '', $row["english_meaning"]) ."'>" . $row["word"]. "</li>";
       //$output.= "<li data-value='Koala'>" . $row["word"]. "</li>";
     }
   } else {
@@ -43,9 +51,15 @@
   $divOne = '#div'.$subjects[0];
   $divTwo = '#div'.$subjects[1];
   $divThree = '#div'.$subjects[2];
+  $divFour = '#div'.$subjects[3];
+  $divFive = '#div'.$subjects[4];
+  $divSix = '#div'.$subjects[5];
   $liOne = '#'.$subjects[0];
   $liTwo = '#'.$subjects[1];
   $liThree = '#'.$subjects[2];
+  $liFour = '#'.$subjects[3];
+  $liFive = '#'.$subjects[4];
+  $liSix = '#'.$subjects[5];
   ?>
 
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
@@ -54,12 +68,21 @@
         var animalOne = '<?php echo $subjects[0];?>'
         var animalTwo = '<?php echo $subjects[1];?>'
         var animalThree = '<?php echo $subjects[2];?>'
+        var animalFour = '<?php echo $subjects[3];?>'
+        var animalFive = '<?php echo $subjects[4];?>'
+        var animalSix = '<?php echo $subjects[5];?>'
         var divOne = '<?php echo $divOne;?>'
         var divTwo = '<?php echo $divTwo;?>'
         var divThree = '<?php echo $divThree;?>'
+        var divFour = '<?php echo $divFour;?>'
+        var divFive = '<?php echo $divFive;?>'
+        var divSix = '<?php echo $divSix;?>'
         var liOne = '<?php echo $liOne;?>'
         var liTwo = '<?php echo $liTwo;?>'
         var liThree = '<?php echo $liThree;?>'
+        var liFour = '<?php echo $liFour;?>'
+        var liFive = '<?php echo $liFive;?>'
+        var liSix = '<?php echo $liSix;?>'
 
         $(document).ready(function () {
             $('#source li').draggable({
@@ -87,13 +110,31 @@
                     $(liThree).append(ui.draggable);
                 }
             });
+            $(divFour).droppable({
+                accept: "li[data-value='<?php echo $subjects[3];?>']",
+                drop: function (event, ui) {
+                    $(liFour).append(ui.draggable);
+                }
+            });
+            $(divFive).droppable({
+                accept: "li[data-value='<?php echo $subjects[4];?>']",
+                drop: function (event, ui) {
+                    $(liFive).append(ui.draggable);
+                }
+            });
+            $(divSix).droppable({
+                accept: "li[data-value='<?php echo $subjects[5];?>']",
+                drop: function (event, ui) {
+                    $(liSix).append(ui.draggable);
+                }
+            });
         });
     </script>
     <style>
         .divClass {
           border: 3px solid black;
           font-size: 40px;
-          background-color: lightgray;
+          background-color: rgb(247, 236, 202);
           width: 20%;
           padding: 5px;
           display: inline-table;
@@ -118,10 +159,12 @@
           background:white;
           text-align:center;
           font-size:18px;
+          width:100%;
+          height:33px;
         }
         #mystery{
-			margin-bottom:2%;
-		}
+			    margin-bottom:2%;
+		    }
         #mystery li{
           display:inline;
           padding: 9px;
@@ -136,22 +179,28 @@
         lable {
           padding:5px;
         }
-
+    
     </style>
-    <div class = "instructions"><em>Drag the Mystery words to the correct image</em>
+
+    <?php 
+    if($languages == "('Yugara')"){
+      $select = "<select name= 'Language'><option value='Yugara' selected='selected'>Yugara</option><option value='Yugarabul'>Yugarabul</option></select>";
+    }
+    else{
+      $select = "<select name= 'Language'><option value='Yugara'>Yugara</option><option value='Yugarabul' selected='selected'>Yugarabul</option></select>";
+    }
+    ?>
+
+    <div class = "instructions" style = "padding-bottom:5px">
     <form>
       <label for="Language">Language:</label>
-      <select name= "Language">
-        <option value="Yugara">Yugara</option>
-        <option value="Yugarabul">Yugarabul</option>
-      </select>
-    </form>
-    <form>
+      <?php echo  $select;?>
       <label for="Topic">Topic:</label>
       <select name= "Topic">
         <option value="Animals">Animals</option>
         <option value="Greetings">Greetings</option>
       </select>
+      <input type="submit" value="Go">
     </form>
     </div>      
 
@@ -162,6 +211,10 @@
               <label>
               Mystery Words
               </label>
+              <br>
+              <p style = "font-size:18px;">
+              (Drag the Mystery words to the correct image)
+              </p>
               <ul id="source">
                 <?php echo  $output;?>
               </ul>
@@ -195,32 +248,32 @@
               <ul id='<?php echo $subjects[2];?>'></ul>
             </div>
           </div>
-          <div>
-            <div class="divClass" id='1'>
-              <?php echo $subjects[2]?><br>
+          <div style = "padding-bottom:15px;">
+            <div class="divClass"  id='div<?php echo $subjects[3];?>'>
+              <?php echo $subjects[3]?><br>
               <figure>
-                <img src="../View/Images/Shark.jpg" alt = "Shark"><br>
-                <figcaption>https://www.flickr.com/photos/skymind25/79609238</figcaption>
+                <img src="../View/Images/Emu.jpg" alt = "Emu"><br>
+                <figcaption>https://www.flickr.com/photos/iansand/27404702110</figcaption>
               </figure>
-              <ul id='<?php echo $subjects[2];?>'></ul>
+              <ul id='<?php echo $subjects[3];?>'></ul>
             </div>
 
-            <div class="divClass" id='2'>
-              <?php echo $subjects[2]?><br>
+            <div class="divClass"  id='div<?php echo $subjects[4];?>'>
+              <?php echo $subjects[4]?><br>
               <figure>
-                <img src="../View/Images/Shark.jpg" alt = "Shark"><br>
-                <figcaption>https://www.flickr.com/photos/skymind25/79609238</figcaption>
+                <img src="../View/Images/Sugar_Glider.jpg" alt = "Sugar Glider"><br>
+                <figcaption>https://www.flickr.com/photos/27229185@N05/2541416661</figcaption>
               </figure>
-              <ul id='<?php echo $subjects[2];?>'></ul>
+              <ul id='<?php echo $subjects[4];?>'></ul>
             </div>
 
-            <div class="divClass" id='3'>
-              <?php echo $subjects[2]?><br>
+            <div class="divClass"  id='div<?php echo $subjects[5];?>'>
+              <?php echo $subjects[5]?><br>
               <figure>
-                <img src="../View/Images/Shark.jpg" alt = "Shark"><br>
-                <figcaption>https://www.flickr.com/photos/skymind25/79609238</figcaption>
+                <img src="../View/Images/Crow.jpg" alt = "Crow"><br>
+                <figcaption>https://www.flickr.com/photos/dulvariprestige/4631643994</figcaption>
               </figure>
-              <ul id='<?php echo $subjects[2];?>'></ul>
+              <ul id='<?php echo $subjects[5];?>'></ul>
             </div>
           </div>
         </div>

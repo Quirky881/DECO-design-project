@@ -2,16 +2,17 @@
 <html>
   <?php include("header.php"); ?>
 
-    <div class="row main">
+    <div class="row main" >
 	  <div class="col-1"></div>
 
       <div class="col-10">
         <div class="readbook">
 
           <div class="flipbook-viewport">
+			  
           		<div class="flipbook">
-          			<div style="background-image:url(../View/Images/title-page.svg)" class="title">
-          				<h2>How the Water got to the Plains</h2>
+          			<div style="background-image:url(../View/Images/bookEntry1.png);" class="title">
+          				<h2 style="color:white;">How the Water got to the Plains</h2>
           			</div>
           			<div class="onpage">
           				<div class="padding-style">
@@ -121,7 +122,7 @@
           										<div id="back-img">
           											<div class="abori-word">
 
-														  <p class="eng-meaning">English:children</p>
+														  <p class="eng-meaning">English:child</p>
 														  <p>Kazi</p>
           											</div>
           										</div>
@@ -147,7 +148,32 @@
 
           			<div class="onpage">
           				<div class="padding-style">
-          					The best spearmen in the group ran to a cliff which jutted out and threw all the spears they had. One hit the eel-a-mun and dropped off. However, it did make a hole in the water-carrier. On and on across the plains ran the two men. They did not notice that the water was leaking out until the carrier was almost empty. This was why they had been able to run faster and by this time, the warriors had caught up.
+							  The best spearmen in the group ran to a cliff which jutted out and threw all the 
+							  <div calss="flip-box-position" style="display:inline-block; " >
+          						<div class="flip-box">
+          							<div class="flip-container" >
+          								<div class="flipper">
+          									<div class="front" >
+          										<!-- https://www.vectorstock.com/royalty-free-vector/weapon-spear-vector-14850843 -->
+          									<img src="../View/Images/spear.png" alt="spear">
+          									<!-- ----------------------------------- -->
+
+          									</div>
+          									<div class="back">
+          										<div id="back-img">
+          											<div class="abori-word">
+
+														  <p class="eng-meaning">English:spear</p>
+														  <p>Dagul</p>
+          											</div>
+          										</div>
+          									</div>
+          								</div>
+          							</div>
+          						</div>
+          					</div>
+ 
+							  they had. One hit the eel-a-mun and dropped off. However, it did make a hole in the water-carrier. On and on across the plains ran the two men. They did not notice that the water was leaking out until the carrier was almost empty. This was why they had been able to run faster and by this time, the warriors had caught up.
           				</div>
           			</div>
 
@@ -161,7 +187,55 @@
 
           			<div class="onpage">
           				<div class="padding-style">
-          				So the Wonmutta, the clever man, made some very strong magic and Weeree was changed into the very first emu. He went running down the mountain, out onto the plains, in shame. Walawidbit was changed into the very first blue-tongued lizard and he crawled away to hide in the rocks.
+						  So the Wonmutta, the clever man, made some very strong magic and Weeree was changed into the very first
+						  <div calss="flip-box-position" style="display:inline-block; " >
+          						<div class="flip-box">
+          							<div class="flip-container" >
+          								<div class="flipper">
+          									<div class="front" >
+          										<!-- https://pixabay.com/photos/child-boy-portrait-children-people-817373/ -->
+          									<img src="../View/Images/Emu.jpg" alt="emu">
+          									<!-- ----------------------------------- -->
+
+          									</div>
+          									<div class="back">
+          										<div id="back-img">
+          											<div class="abori-word">
+
+														  <p class="eng-meaning">English:emu</p>
+														  <p>Nguyi</p>
+          											</div>
+          										</div>
+          									</div>
+          								</div>
+          							</div>
+          						</div>
+          					</div>
+						  . He went running down the mountain, out onto the plains, in shame. Walawidbit was changed into the very first blue-tongued 
+						  <div calss="flip-box-position" style="display:inline-block; " >
+          						<div class="flip-box">
+          							<div class="flip-container" >
+          								<div class="flipper">
+          									<div class="front" >
+          										<!-- https://pixabay.com/photos/child-boy-portrait-children-people-817373/ -->
+          									<img src="../View/Images/lizard.png" alt="lizard">
+          									<!-- ----------------------------------- -->
+
+          									</div>
+          									<div class="back">
+          										<div id="back-img">
+          											<div class="abori-word">
+
+														  <p class="eng-meaning">English:lizard</p>
+														  <p>Iku</p>
+          											</div>
+          										</div>
+          									</div>
+          								</div>
+          							</div>
+          						</div>
+          					</div>
+						  and he crawled away to hide in the rocks.
           				</div>
           			</div>
 
@@ -171,16 +245,18 @@
           				</div>
 					  </div>
 
-					  <div class="hard" ></div>
-
+					  <div class="onpage" style="background-image:url(../View/Images/bookEntry1.png);" ></div>
+					
 
           		</div>
           </div>
         </div>
 	  </div>
-	  <div class="col-1" id="exit" >
-			<img src="../View/Images/closeButton.png" alt="close button" onclick="bookExit()">
-			<div id="point"><img src="../View/Images/Pointing.gif" alt="pointing" style="width: 15%;float: right;margin: 10% 0 0 0;"></div>
+    <div class="col-1" id="exit" >
+			<img src="../View/Images/closebutton.png" alt="close button" onclick="bookExit()" style="z-index: 100;border-radius:100%; width:80%;cursor: pointer;">
+      <div id="point">
+        <img src="../View/Images/Pointing.gif" alt="pointing" style="width: 200%;float: right;margin: -30% 500% 0 0; z-index: 50;transform: scaleX(-1);">
+      </div>
     </div>
 	</div>
     </div>
