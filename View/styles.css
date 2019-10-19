@@ -124,7 +124,7 @@ footer {
 
 /***************************Home*********************************/
 
-.HomeContent {
+/* .HomeContent {
 	background-image: url(../View/Images/backgroundimg.jpg);
 	background-repeat: no-repeat;
 	height: 100%;
@@ -160,12 +160,13 @@ footer {
   color: white;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
   cursor: pointer;
-} */
+} 
 
 button:hover {
   background: green;
   transition: all 0.8s ease;
-}
+} */
+
 
 
 
