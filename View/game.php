@@ -159,10 +159,12 @@
           background:white;
           text-align:center;
           font-size:18px;
+          width:100%;
+          height:33px;
         }
         #mystery{
-			margin-bottom:2%;
-		}
+			    margin-bottom:2%;
+		    }
         #mystery li{
           display:inline;
           padding: 9px;
@@ -209,7 +211,10 @@
               <label>
               Mystery Words
               </label>
-              <em>Drag the Mystery words to the correct image</em>
+              <br>
+              <p style = "font-size:18px;">
+              (Drag the Mystery words to the correct image)
+              </p>
               <ul id="source">
                 <?php echo  $output;?>
               </ul>
