@@ -222,7 +222,7 @@ a {
 .option5:hover {
     background-color: #00cec9;
     cursor: pointer;
-}  
+}
 </style>
 
       <div class="row main" style="position: absolute; top: 10%; width: 100%;">
@@ -282,7 +282,7 @@ a {
                 <img id="spear3" src="../Images/spear.svg" alt="select3">
                 <img id="spear4" src="../Images/spear.svg" alt="select3">
                 <img id="spear5" src="../Images/spear.svg" alt="select3">
-             </section> 
+             </section>
         </section>
             </div>
           </div>
@@ -291,14 +291,14 @@ a {
   </div>
   <script src="../../Control/home.js"></script>
   <script>
-    
+
       $(function() {
           $('.option1').hover(function() {
           $('#man1').css('opacity', '0');
           }, function() {
           $('#man1').css('opacity', '1');
   });
-      
+
 });
 
       $(function() {
@@ -307,7 +307,7 @@ a {
           }, function() {
           $('#man2').css('opacity', '0');
       });
-      
+
   });
 
       $(function() {
@@ -316,7 +316,7 @@ a {
           }, function() {
           $('#spear1').css('opacity', '0');
       });
-      
+
   });
 
       $(function() {
@@ -325,7 +325,7 @@ a {
           }, function() {
           $('#man1').css('opacity', '1');
   });
-      
+
 });
 
       $(function() {
@@ -334,7 +334,7 @@ a {
           }, function() {
           $('#man2').css('opacity', '0');
       });
-      
+
   });
 
       $(function() {
@@ -343,8 +343,8 @@ a {
           }, function() {
           $('#spear2').css('opacity', '0');
       });
-      
-  });            
+
+  });
 
       $(function() {
           $('.option3').hover(function() {
@@ -352,7 +352,7 @@ a {
           }, function() {
           $('#man1').css('opacity', '1');
   });
-      
+
 });
 
       $(function() {
@@ -361,7 +361,7 @@ a {
           }, function() {
           $('#man2').css('opacity', '0');
       });
-      
+
   });
 
       $(function() {
@@ -370,8 +370,8 @@ a {
           }, function() {
           $('#spear3').css('opacity', '0');
       });
-      
-  });  
+
+  });
 
       $(function() {
           $('.option4').hover(function() {
@@ -379,7 +379,7 @@ a {
           }, function() {
           $('#man1').css('opacity', '1');
   });
-      
+
 });
 
       $(function() {
@@ -388,7 +388,7 @@ a {
           }, function() {
           $('#man2').css('opacity', '0');
       });
-      
+
   });
 
       $(function() {
@@ -397,8 +397,8 @@ a {
           }, function() {
           $('#spear4').css('opacity', '0');
       });
-      
-  });  
+
+  });
 
       $(function() {
           $('.option5').hover(function() {
@@ -406,7 +406,7 @@ a {
           }, function() {
           $('#man1').css('opacity', '1');
   });
-      
+
 });
 
       $(function() {
@@ -415,7 +415,7 @@ a {
           }, function() {
           $('#man2').css('opacity', '0');
       });
-      
+
   });
 
       $(function() {
@@ -424,8 +424,8 @@ a {
           }, function() {
           $('#spear5').css('opacity', '0');
       });
-      
-  });  
+
+  });
 
   </script>
 <?php include("footer.php"); ?>

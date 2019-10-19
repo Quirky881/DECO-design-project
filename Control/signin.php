@@ -3,12 +3,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // collect value of input field
     $email = $_REQUEST['email'];
     if (empty($email)) {
-        echo "Email is empty";
+        $error = "Email is empty";
+        header("Location: ../index.php?error=" . $error);
     }
 
     $userPassword = $_REQUEST['password'];
     if (empty($userPassword)) {
-        echo "Password is empty";
+        $error = "Password is empty";
+        header("Location: ../index.php?error=" . $error);
     }
 
     $servername = "localhost";
@@ -29,6 +31,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sql = "SELECT username, password FROM " . $tableName;
     $result = $conn->query($sql);
 
+    $conn->close();
+
     if ($result->num_rows == 1) {
 
       $hashedPassword = password_hash($userPassword, PASSWORD_DEFAULT);
@@ -47,6 +51,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "<p>User not found!<p>";
     }
 
-    $conn->close();
 }
 ?>

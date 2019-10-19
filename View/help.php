@@ -66,7 +66,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 2rem;
     color: #333;
-    margin: 1rem;    
+    margin: 1rem;
 }
 
 .role {
@@ -142,8 +142,8 @@ body {
                 <section class="teammember">
                     <div class="teamdescritption">
                         <div class="box">
-                            <img class="back" src="images/title-page.svg" alt="project">
-                            <img id="mates" src="images/teamleader.png" alt="kieran">
+                            <img class="back" src="Images/title-page.svg" alt="project">
+                            <img id="mates" src="Images/teamleader.png" alt="kieran">
                             <h2 class="name">Kieran Quirke-Brown</h2>
                             <p class="role">Team Leader/UI Designer</p>
                             <p class="description">I am currently studying a masters of information technology while working full time at Schneider Electric working as a smart services engineer. Based on my past university courses, university projects and work I believe my top skills that I bring to the project are: project management, front end programming and server side programming. I have little design experience and hope to build some skills in design by creating some of the pictures and graphics within our website.</p>
@@ -155,8 +155,8 @@ body {
                     </div>
                     <div class="teamdescritption">
                         <div class="box">
-                            <img class="back" src="images/title-page.svg" alt="project">
-                            <img id="mates" src="images/MarkBird.png" alt="mark">
+                            <img class="back" src="Images/title-page.svg" alt="project">
+                            <img id="mates" src="Images/MarkBird.png" alt="mark">
                             <h2 class="name">Mark Bird</h2>
                             <p class="role">Database Designer/Coder</p>
                             <p class="description">I am currently studying a masters of information technology, my background is in mathematics but I have also studies Databases, programing and some web development. I have limited design experience which I hope to expand upon but will be best utilized working on programing and database tasks.</p>
@@ -168,8 +168,8 @@ body {
                     </div>
                     <div class="teamdescritption">
                         <div class="box">
-                            <img class="back" src="images/title-page.svg" alt="project">
-                            <img id="mates" src="images/girl.jpg" alt="mengqi">
+                            <img class="back" src="Images/title-page.svg" alt="project">
+                            <img id="mates" src="Images/girl.jpg" alt="mengqi">
                             <h2 class="name">Mengqi Huang</h2>
                             <p class="role">Designer/Coder</p>
                             <p class="description">As a member with design background, I enjoy applying my design skills to solve real-world problems and being part of the creative  project. Based on the previous project experience, I can bring the following skills to the team: aesthetic designing and  front-end developing. I have no experience in back-end developing and hopefully I am able to expand my skill sets through the project.</p>
@@ -181,8 +181,8 @@ body {
                     </div>
                     <div class="teamdescritption">
                         <div class="box">
-                            <img class="back" src="images/title-page.svg" alt="project">
-                            <img id="mates" src="images/me.jpg" alt="zengzhi">
+                            <img class="back" src="Images/title-page.svg" alt="project">
+                            <img id="mates" src="Images/me.jpg" alt="zengzhi">
                             <h2 class="name">Zhi Zeng</h2>
                             <p class="role">UI Designer/Coder</p>
                             <p class="description">I am currently studying a master of information technology. My background is business, however, I have studied some web design including Javascript, HTML, CSS. I currently work part-time in marketing and design, but I feel like there is still so much more to learn in terms of web design and web development. I hope that my current knowledge will help me complete the tasks set by the team.</p>

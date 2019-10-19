@@ -8,7 +8,7 @@
           <div class="row blank">
             <div class="col-3"></div>
             <div class="col-6 text-center" id="signinForm">
-              <form action="<?php echo $_SERVER['PHP_SELF'];?>" method="post">
+              <form action="../Control/signin.php" method="post">
                 <h1>Sign In!</h1>
                 <hr>
                 <div class="row">
@@ -27,6 +27,17 @@
                   </div>
                   <div class="col-1"></div>
                 </div>
+                <div class="row" style="margin-bottom: 3%;">
+                  <div class="col-3"></div>
+                  <div class="col-6 text-center" id="error">
+                    <?php
+                      if(isset($_GET['error'])) {
+                        echo "<p><b>" . $_GET['error'] . "<b></p>";
+                      }
+                    ?>
+                  </div>
+                  <div class="col-3"></div>
+                </div>
                 <div class="row" style="min-height:10px; padding-bottom: 20px;">
                   <div class="col-1"></div>
                     <div class="col-5 text-center">
@@ -44,13 +55,7 @@
                   </div>
                   <div class="col-1"></div>
                 </div>
-                <div class="row">
-                  <div class="col-3"></div>
-                  <div class="col-6 text-center">
-                    <?php include("Control/signin.php"); ?>
-                  </div>
-                  <div class="col-3"></div>
-                  </div>
+
                 </div>
                 <div class="col-3"></div>
                 </div>
