@@ -287,9 +287,7 @@ margin: 10%;
     transform: rotateY(180deg);
     background: white;
     opacity: 0.7;
-    /* padding: 1em; */
-    /* width: 10em;
-	height:7em; */
+
 
 
 }
@@ -297,7 +295,7 @@ margin: 10%;
 
 .front {
 
-    /* for firefox 31 */
+
     transform: rotateY(0deg);
 }
 
@@ -311,16 +309,17 @@ margin: 10%;
 
 #back-img{
 	border-radius: 1em;
-	width: 50%;
-	height: 50%;
+	width: 40%;
+	height: 40%;
 
 }
 .eng-meaning{
-	font-size: 12px;
+	font-size: 14px;
 }
 
 .abori-word{
-	line-height: 1;
+  line-height:1;
+  padding: 40%;
 
 }
 
@@ -382,7 +381,7 @@ fieldset {
   margin: 3% 1em;
   border-radius: 10px;
   color: white;
-  background: rgb(165, 50, 5);
+  background: rgb(194, 77, 30);
 }
 
 fieldset .form-item {
@@ -405,7 +404,8 @@ fieldset .form-item .form-element > label {
 display: block;
 }
 
-input[type=text], textarea {
+input[type=text],
+input[type=password], textarea {
   box-shadow: rgba(0,0,0,0.15) 3px 3px 5px;
   background: white;
   border: 1px solid #ccc;
@@ -415,11 +415,12 @@ input[type=text], textarea {
   font-size: 0.9em;
 }
 
-input[type=text]:focus {
-  border-color:rgb(165,50,5);
+input[type=text]:focus，
+input[type=password]:focus {
+  border-color:rgb(194, 77, 30);
 }
 
-button {
+.btn-btn-primary {
   font-weight: bold;
   font-size: 1.3em;
   background: black;
@@ -427,7 +428,7 @@ button {
   color: white;
   border: 0;
   border-radius: 10%;
-  background: rgb(165, 50, 5);
+  background: rgb(194, 77, 30);
   cursor: pointer;
   float: right;
 }
@@ -440,7 +441,7 @@ button {
 /* avatar */
 .avatar {
   max-width: 960px;
-  margin: 30px auto;
+  margin: 10% auto;
   padding: 20px;
 }
 
@@ -448,7 +449,7 @@ button {
 .avatar-upload {
   position: relative;
   max-width: 205px;
-  margin: 50px auto;}
+  margin: 15% auto;}
 
 .avatar-edit {
       position: absolute;
@@ -531,21 +532,21 @@ background-position: center;
 #entry1{
 	z-index: 1000;
 	border: blue;
-	margin: 24% 0 0 43.2%;
+	margin: 24% 0 0 39%;
 	cursor: pointer;
 }
 
 #entry2{
 	z-index: 1000;
 	border: rgb(3, 146, 39);
-	margin: 18% 0 0 60%;
+	margin: 17% 0 0 58%;
 	cursor: pointer;
 }
 
 #entry3{
 	z-index: 1000;
 	border: rgb(3, 146, 39);
-	margin: 9% 0 0 55%;
+	margin: 9% 0 0 52%;
 	cursor: pointer;
 }
 
@@ -559,27 +560,32 @@ background-position: center;
 }
 
 #entry2 img{
-	width: 15%;
+	width: 16%;
 	border-radius: 100%;
 	border:0.7vh solid rgb(216, 216, 216);
-	box-shadow: 0 0 0 0.8vh rgb(223, 72, 13), 0 0 0 1.5vh rgb(173, 114, 4);
+	box-shadow: 0 0 0 0.8vh rgb(223, 72, 13), 0 0 0 1.5vh rgb(194, 119, 6);
 	position: relative;
 	transition: transform .2s;
 }
 
 #entry3 img{
-	width: 15%;
+	width: 12%;
 	border-radius: 100%;
-	border:0.7vh solid rgb(216, 216, 216);
-	box-shadow: 0 0 0 0.8vh rgb(70, 67, 66), 0 0 0 1.5vh rgb(173, 114, 4);
+	border:0.7vh solid rgb(231, 62, 11);
+	box-shadow: 0 0 0 0.8vh rgb(55, 143, 214), 0 0 0 1.5vh rgb(231, 197, 169);
 	position: relative;
 	transition: transform .2s;
+}
+
+#exit img{
+  transition: transform .2s;
 }
 
 /* maggify when hover */
 #entry1 img:hover,
 #entry2 img:hover,
-#entry3 img:hover{
+#entry3 img:hover,
+#exitbutton img:hover{
     transform: scale(1.1);
     animation-play-state: paused;
 }

@@ -19,7 +19,7 @@
         </div>
 
         <div id="entry3" class="hide">
-                <img  src="../View/Images/Aboriginals-boomerang.png" alt="bookEntry3" onclick="bookEntry3()">
+                <img  src="../View/Images/storyEntry3.png" alt="bookEntry3" onclick="bookEntry3()">
             </div>
     </div>
     </div>

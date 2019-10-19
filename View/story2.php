@@ -10,70 +10,117 @@
 
           <div class="flipbook-viewport">
           		<div class="flipbook">
-          			<div style="background-image:url(../View/Images/bookEntry1.png)" class="title">
-          				<h2>How the Water got to the Plains</h2>
+          			<div style="background-image:url(../View/Images/RainbowSerpent.png)" class="title">
+          				<h2 style="color:white;">The Rainbow Serpent</h2>
           			</div>
           			<div class="onpage">
           				<div class="padding-style">
-          					Way, way back in the first time, when everything was new, there was a group of Aboriginal people living on a mountain. It was a lovely place, but everyone was worried. It had not
+						  At the beginning of the Dreamtime, the earth was flat and dry and empty. There were no trees, no rivers, no animals and no grass. It was a dry and flat land.
+							One day, Goorialla, the rainbow serpent woke from his sleep and set off to find his tribe. He crossed Australia from east to west and north to south, stopping to listen for his people. He crossed every part of the dry, flat Australia but found nothing. After searching for a long time, he grew tired and lay down to sleep.
+							<br><br>
+							The land he lay down to sleep on was not the same land 
+          				</div>
+          			</div>
 
-          					<div calss="flip-box-position" style="display:inline-block;" >
-          						<div class="flip-box">
-          							<div class="flip-container" >
-          								<div class="flipper">
-          									<div class="front" >
-          										<!-- https://www.pexels.com/photo/red-and-gray-rain-boots-near-pink-umbrella-34519/ -->
-          									<img src="../View/Images/boots-footwear-rain-34519 (1).jpg" alt="rain">
-          									<!-- ----------------------------------- -->
+          			<div class="onpage">
+          				<div class="padding-style">
+						  he had set out to search for his 
+						  <div calss="flip-box-position" style="display:inline-block; " >
+          					<div class="flip-box">
+          						<div class="flip-container" >
+          							<div class="flipper">
+          								<div class="front" >
+          									<!-- https://www.sbs.com.au/language/english/five-mistakes-people-make-in-conversation-with-aboriginal-people -->
+          								<img src="../View/Images/people.png" alt="people">
+          								<!-- ----------------------------------- -->
 
-          									</div>
-          									<div class="back">
-          										<div id="back-img">
-          											<div class="abori-word">
-          												<p>Ari</p>
-          												<p class="eng-meaning">English:Rain</p>
-          											</div>
+          								</div>
+          								<div class="back">
+          									<div id="back-img">
+          										<div class="abori-word">
+          											<p class="eng-meaning">English:people</p>
+          											<p >Garkazi</p>
           										</div>
           									</div>
           								</div>
           							</div>
           						</div>
           					</div>
-          				for a long, long time and they were very short of
-          				<div calss="flip-box-position" style="display:inline-block;" >
+          				</div> 
+						  on, though. As he had looked for his people, his big, long body had cut great gouges into the land.
+
+							Goorialla lay in the sand all alone until he decided to create more life in the world. He called “Frogs, come out!” and 
+						<div calss="flip-box-position" style="display:inline-block; " >
           					<div class="flip-box">
           						<div class="flip-container" >
           							<div class="flipper">
           								<div class="front" >
-          									<!-- https://pixabay.com/photos/drip-drop-of-water-wave-wet-water-921067/-->
+          									<!-- https://www.pexels.com/search/frog/ -->
+          								<img src="../View/Images/frog.png" alt="frog">
+          								<!-- ----------------------------------- -->
+
+          								</div>
+          								<div class="back">
+          									<div id="back-img">
+          										<div class="abori-word">
+          											<p class="eng-meaning">English:frog</p>
+          											<p >Katube</p>
+          										</div>
+          									</div>
+          								</div>
+          							</div>
+          						</div>
+          					</div>
+          				</div> 
+						rose out of the ground with their bellies full of the water they stored. He tickled the frogs until the water burst from their mouth and filled the gouges
+          				
+          				
+          				</div>
+          			</div>
+
+          			<div class="onpage">
+          				<div class="padding-style">
+						  in the land. These gouges made the rivers and streams we see today.
+						As the water flowed over the land, grass and trees began to grow and fill the land with colour.
+						<br><br>
+						  Now that there was grass to eat and 
+						  <div calss="flip-box-position" style="display:inline-block; " >
+          					<div class="flip-box">
+          						<div class="flip-container" >
+          							<div class="flipper">
+          								<div class="front" >
+          									<!-- https://www.pexels.com -->
           								<img src="../View/Images/water.jpg" alt="water">
           								<!-- ----------------------------------- -->
 
           								</div>
           								<div class="back">
           									<div id="back-img">
-          										<div class="abori-word" >
+          										<div class="abori-word">
+          											<p class="eng-meaning">English:water</p>
           											<p>Nguki</p>
-          											<p class="eng-meaning" >English:Water</p>
           										</div>
           									</div>
           								</div>
           							</div>
           						</div>
           					</div>
-          				</div>.
+          				</div>  
+						  to drink, Goorialla woke the animals. The kookaburra laughed, the goanna walked, and the wombat climbed out of her burrow, all for the first time. Some animals 
           				</div>
           			</div>
 
+
+
           			<div class="onpage">
           				<div class="padding-style">
-          					They had some wells but these, except for one, were empty. When it had rained before, the water had just run down the side of the mountain, into the
-          				<div calss="flip-box-position" style="display:inline-block; " >
+						  lived in the 
+						  <div calss="flip-box-position" style="display:inline-block; " >
           					<div class="flip-box">
           						<div class="flip-container" >
           							<div class="flipper">
           								<div class="front" >
-          									<!-- https://pixabay.com/photos/wave-water-surf-ocean-sea-spray-3473335/ -->
+          									<!-- https://www.pexels.com -->
           								<img src="../View/Images/sea.jpg" alt="sea">
           								<!-- ----------------------------------- -->
 
@@ -81,80 +128,128 @@
           								<div class="back">
           									<div id="back-img">
           										<div class="abori-word">
-          											<p>Malu</p>
-          											<p class="eng-meaning">English:Sea</p>
+          											<p class="eng-meaning">English:sea</p>
+          											<p >Malu</p>
           										</div>
           									</div>
           								</div>
           							</div>
           						</div>
           					</div>
-          				</div>
-          				, which was far, far away. Now, on the other side of the mountain, there were just some big, dry plains where nothing grew.
+          				</div>  
+						  , swimming back and forward. Some animals lived in the sky, flying with their friends to distant places. Some animals lived on the land, digging and playing in the sand. They were happy and gathered food and water to bring back to their own tribes.
+						  <br><br>
+						  The Rainbow Serpent made rules that all animals had to obey. He said “All animals that obey the rules will be rewarded by becoming humans. The animals that 
           				</div>
           			</div>
 
           			<div class="onpage">
           				<div class="padding-style">
-          					Weeri and Walawidbit were two greedy men. They decided to steal the last of the water for themselves and then run away.
+						  disobey the rules will be punished” Some animals followed the rules and were rewarded by being turned into humans. Other animals disobeyed the rules and were turned into the stone that makes the mountains.
+						 <br><br> 
+						  One day, it started to 
+						  <div calss="flip-box-position" style="display:inline-block; " >
+          					<div class="flip-box">
+          						<div class="flip-container" >
+          							<div class="flipper">
+          								<div class="front" >
+          									<!-- https://www.pexels.com -->
+          								<img src="../View/Images/rain.png" alt="rain">
+          								<!-- ----------------------------------- -->
 
-          					<br>
-
-          					In secret, they made a large water-carrier, which was called an eel-a-mun. When everyone was asleep, they stole the water from the last well and hurried off.
-          					<br>
-          					When the people woke up, there was no water for them. This was very bad, because there were little
-
-          					<div calss="flip-box-position" style="display:inline-block; " >
-          						<div class="flip-box">
-          							<div class="flip-container" >
-          								<div class="flipper">
-          									<div class="front" >
-          										<!-- https://pixabay.com/photos/child-boy-portrait-children-people-817373/ -->
-          									<img src="../View/Images/child.jpg" alt="child">
-          									<!-- ----------------------------------- -->
-
-          									</div>
-          									<div class="back">
-          										<div id="back-img">
-          											<div class="abori-word">
-          												<p>Kazi</p>
-          												<p class="eng-meaning">English:children</p>
-          											</div>
+          								</div>
+          								<div class="back">
+          									<div id="back-img">
+          										<div class="abori-word">
+          											<p class="eng-meaning">English:rain</p>
+          											<p >Ari</p>
           										</div>
           									</div>
           								</div>
           							</div>
           						</div>
           					</div>
+          				</div>   
+						  . And it rained like it had never rained before. Rain fell for days and days and the world was becoming flooded with water. Two young men, Bil-bil, or the Rainbow Lorikeet brothers had no shelter and they came to the Rainbow Serpent. They asked for help sheltering from the rain.
 
-          					and babies needing water and also
           				</div>
-          			</div>
+					  </div>
+					  
+					  <div class="onpage">
+          				<div class="padding-style">
+						  The rainbow serpent was hungry and tricked the young men “I have no shelter, but you can hide in my 
+						  <div calss="flip-box-position" style="display:inline-block; " >
+          					<div class="flip-box">
+          						<div class="flip-container" >
+          							<div class="flipper">
+          								<div class="front" >
+          									<!-- https://www.pexels.com -->
+          								<img src="../View/Images/snake-mouth.png" alt="snake-mouth">
+          								<!-- ----------------------------------- -->
+
+          								</div>
+          								<div class="back">
+          									<div id="back-img">
+          										<div class="abori-word">
+          											<p class="eng-meaning">English:mouth</p>
+          											<p >Gud</p>
+          										</div>
+          									</div>
+          								</div>
+          							</div>
+          						</div>
+          					</div>
+          				</div>   
+						  . You’ll be safe from the rain in there.” The young men climbed into Goorialla’s mouth and he closed it shut, swallowing both men.
+						  <br><br>
+						  He soon realised that people would notice the young men missing and come looking for them. He knew they would find their track leading right into his mouth. He  
+						  </div>
+          				</div> 
+						  
+
+						<div class="onpage">
+          				<div class="padding-style">
+						  didn’t want to be caught and so decided to hide in the only place he knew he would be safe: the 
+						  <div calss="flip-box-position" style="display:inline-block; " >
+          					<div class="flip-box">
+          						<div class="flip-container" >
+          							<div class="flipper">
+          								<div class="front" >
+          									<!-- https://www.pexels.com -->
+          								<img src="../View/Images/sky.png" alt="sky">
+          								<!-- ----------------------------------- -->
+
+          								</div>
+          								<div class="back">
+          									<div id="back-img">
+          										<div class="abori-word">
+          											<p class="eng-meaning">English:sky</p>
+          											<p >Dapar</p>
+          										</div>
+          									</div>
+          								</div>
+          							</div>
+          						</div>
+          					</div>
+          				</div>   
+						  .
+						  <br><br>
+						  He hid in the sky away from the people chasing him and he saw their sadness at losing these two young men. He decided to try and make them happy again so turned his body into a big arc of beautiful colours.
+						</div>
+					</div>
 
 
-
+					<!-- boots-footwear-rain-34519 (1) -->
           			<div class="onpage">
           				<div class="padding-style">
-          					the old people. And also, it was very hot.
-          					<br><br>
-          					The water-carrier was very heavy and Weeri and Walawidbit were walking slowly. This was because they thought they were safe. However, when they saw the warriors coming they ran, too.
+						 
+
+
+
+Now, every time, just after it rains, you can see the Rainbow Serpent sharing his beautiful colours with the people on the ground as his way of saying sorry for taking those Rainbow Lorikeet brothers.
           				</div>
           			</div>
-
-          			<div class="onpage">
-          				<div class="padding-style">
-          					The best spearmen in the group ran to a cliff which jutted out and threw all the spears they had. One hit the eel-a-mun and dropped off. However, it did make a hole in the water-carrier. On and on across the plains ran the two men. They did not notice that the water was leaking out until the carrier was almost empty. This was why they had been able to run faster and by this time, the warriors had caught up.
-          				</div>
-          			</div>
-
-
-
-          			<div class="onpage">
-          				<div class="padding-style">
-          					Now, this was way back in the first time, when very strange things happened. So the warriors took the men back home and the Elders called a big meeting. It was decided that the two men had to be punished for stealing and also, for thinking of themselves first and not the community.
-          				</div>
-          			</div>
-
+					<div class="onpage" style="background-image:url(../View/Images/RainbowSerpent.png)" ></div>
 
           		</div>
           </div>
