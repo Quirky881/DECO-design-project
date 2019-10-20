@@ -274,13 +274,13 @@ a {
                 </ul>
             </nav>
             <section id="man">
-                <img id="man1" src="../Images/Aboriginals2.svg" alt="select">
-                <img id="man2" src="../Images/Aboriginals3.svg" alt="select2">
-                <img id="spear1" src="../Images/spear.svg" alt="select3">
-                <img id="spear2" src="../Images/spear.svg" alt="select3">
-                <img id="spear3" src="../Images/spear.svg" alt="select3">
-                <img id="spear4" src="../Images/spear.svg" alt="select3">
-                <img id="spear5" src="../Images/spear.svg" alt="select3">
+                <img id="man1" src="../View/Images/Aboriginals2.svg" alt="select">
+                <img id="man2" src="../View/Images/Aboriginals3.svg" alt="select2">
+                <img id="spear1" src="../View/Images/spear.svg" alt="select3">
+                <img id="spear2" src="../View/Images/spear.svg" alt="select3">
+                <img id="spear3" src="../View/Images/spear.svg" alt="select3">
+                <img id="spear4" src="../View/Images/spear.svg" alt="select3">
+                <img id="spear5" src="../View/Images/spear.svg" alt="select3">
              </section>
         </section>
             </div>
