@@ -427,4 +427,9 @@ a {
   });
 
   </script>
+<style>
+    body {
+        background-image:None;
+    }
+</style>
 <?php include("footer.php"); ?>
