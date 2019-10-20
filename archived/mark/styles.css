@@ -122,6 +122,54 @@ footer {
 		margin-top: 2em;
 }
 
+/***************************Home*********************************/
+
+/* .HomeContent {
+	background-image: url(../View/Images/backgroundimg.jpg);
+	background-repeat: no-repeat;
+	height: 100%;
+}
+
+.manselect {
+  display: flex;
+  justify-content: space-around;
+}
+
+.manfig {
+  height: 10%;
+  margin: 2% 2%;
+}
+
+.manfig-2 {
+  height: 10%;
+  margin: 2% 2%;
+}
+
+.selection {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+/* button {
+  background: #b8e994;
+  width: 100%;
+  height: 150%;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+} 
+
+button:hover {
+  background: green;
+  transition: all 0.8s ease;
+} */
+
+
+
+
 /***************************Story book*********************************/
 
 
