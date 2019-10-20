@@ -11,7 +11,7 @@
 section {
     min-height: 100vh;
     position: relative;
-    background-image: url(../Images/grass.svg);
+    background-image: url(../View/Images/grass.svg);
     background-repeat: no-repeat;
     background-size: cover;
 }
