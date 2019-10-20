@@ -288,7 +288,7 @@ a {
         </div>
       </div>
   </div>
-  <script src="../../Control/home.js"></script>
+  <script src="../Control/home.js"></script>
   <script>
 
       $(function() {
