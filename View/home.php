@@ -429,7 +429,7 @@ a {
   </script>
 <style>
     body {
-        background-image:None;
+        background-image: url(../View/Images/grass.svg);
     }
 </style>
 <?php include("footer.php"); ?>
