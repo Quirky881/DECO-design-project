@@ -11,9 +11,9 @@
 section {
     min-height: 100vh;
     position: relative;
-    background-image: url(../View/Images/grass.svg);
+    /*background-image: url(../View/Images/grass.svg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover;*/
 }
 
 #alang {
@@ -430,6 +430,8 @@ a {
 <style>
     body {
         background-image: url(../View/Images/grass.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 </style>
 <?php include("footer.php"); ?>
