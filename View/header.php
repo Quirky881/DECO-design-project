@@ -29,7 +29,7 @@
           <a class="col-2 blank <?php if($activePage == "storyEntry") echo ' active'; ?>" href="../View/storyEntry.php">
             <div id="navicon" class="col-12 blank">
                 <img class="navImgText" src="../View/Images/storyBookIcon.svg" alt="Dream Time Story">
-                <span>Dream Time Story</span>
+                <span>Dreamtime Stories</span>
             </div>
           </a>
           <a class="col-2 blank" href="../View/game.php">
