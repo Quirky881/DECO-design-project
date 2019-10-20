@@ -1,11 +1,12 @@
 <!doctype html>
 <html>
   <?php include("header.php"); ?>
+  <?php include("../Control/getUser.php"); ?>
   <div class="row main">
     <div class="col-3"></div>
     <div class="col-6">
       <div class="d-flex justify-content-center">
-          <section id="user-profile">
+          <section id="user-profile" style="width: 60%">
               <form method="get" action="#">
                   <fieldset>
                       <div id="profileHeader">
@@ -18,7 +19,7 @@
                               <input type="text" name="full_name" id="form-full-name" placeholder="Amy Flower" />
                           </div>
                       </div>
-                    
+
 
                       <div class="form-item">
                           <label for="form-email">Email</label>
@@ -55,12 +56,10 @@
                           <button type="submit" class="btn btn-primary">Save</button>
                         </div>
                       </div>
-
+                      
                   </fieldset>
                   <br>
-
               </form>
-
           </section>
         </div>
     </div>

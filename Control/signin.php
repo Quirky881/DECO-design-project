@@ -28,27 +28,32 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Check user exists
-    $sql = "SELECT username, password FROM " . $tableName;
+    $sql = "SELECT username, password FROM " . $tableName . " WHERE email='" . $email . "';";
     $result = $conn->query($sql);
 
     $conn->close();
 
     if ($result->num_rows == 1) {
 
-      $hashedPassword = password_hash($userPassword, PASSWORD_DEFAULT);
-
       $row = $result->fetch_assoc();
 
       $dbPassword = $row["password"];
 
-      if (password_verify($dbPassword, $hashedPassword)) {
-        $_SESSION['Username'] = $email;
+      if (password_verify($userPassword, $dbPassword)) {
+        session_start();
+        $_SESSION['Username'] = $row["username"];
 
         header("Location: ../View/home.php");
+
+      } else {
+
+          $error = "Wrong password entered!";
+          header("Location: ../index.php?error=" . $error);
       };
 
     } else {
-        echo "<p>User not found!<p>";
+        $error = "User not found!";
+        header("Location: ../index.php?error=" . $error);
     }
 
 }
