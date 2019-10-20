@@ -45,22 +45,32 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($result->num_rows >= 1) {
 
-      echo "<p>User already exists!</p>";
+      $error = "User or email already exists!";
+      header("Location: ../View/signup.php?error=" . $error);
 
     } else if ($userPassword != $conPassword) {
 
-      echo "<p>Passwords do not match!</p>";
+      $error = "Passwords do not match!";
+      header("Location: ../View/signup.php?error=" . $error);
 
     } else {
 
       $hashedPassword = password_hash($userPassword, PASSWORD_DEFAULT);
 
-      $insertSql = "INSERT INTO " . $tableName . " (Email, Username, password) VALUES (" . $email . ", " . $userName . ", " . $hashedPassword . ");";
+      $insertSql = "INSERT INTO " . $tableName . " (Email, Username, password) VALUES ('" . $email . "', '" . $userName . "', '" . $hashedPassword . "');";
       $insertResult = $conn->query($insertSql);
+
+      if ($insertResult != 1) {
+        $error = "Something went wrong please try again";
+        header("Location: ../View/signup.php?error=" . $error);
+      }
 
       $conn->close();
 
-      //header("Location: ../View/home.php");
+      session_start();
+      $_SESSION['Username'] = $userName;
+
+      header("Location: ../View/home.php");
     };
 }
 ?>

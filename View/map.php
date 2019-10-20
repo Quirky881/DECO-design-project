@@ -33,13 +33,31 @@
         //     if (latLong.length == 2) {
         //     var latLong = latLong[1].trim().split(",");
         //
-            var lat = -27.47;
+            var lat = -27.97;
             var lng = 153.02;
-            var marker = L.marker([lat, lng]).addTo(myMap);
+            var marker = L.circle([lat, lng], {
+            	color: 'red',
+            	fillColor: 'red',
+            	fillOpacity: 0.5,
+            	radius: 50000
+            }).addTo(myMap);
             marker.on("click", function(event) {
-                myMap.setView([lat, lng], 14);
+                myMap.setView([lat, lng], 8);
             });
             marker.bindPopup("<h3>Yugara</h3><p></p><p><em>Latitude: " + lat + ", Longitude: " + lng + "</em></p>");
+
+            var lat1 = -31.95;
+            var lng1 = 115.84;
+            var marker = L.circle([lat1, lng1], {
+            	color: 'blue',
+            	fillColor: 'blue',
+            	fillOpacity: 0.5,
+            	radius: 50000
+            }).addTo(myMap);
+            marker.on("click", function(event) {
+                myMap.setView([lat1, lng1], 8);
+            });
+            marker.bindPopup("<h3>Wajuk</h3><p></p><p><em>Latitude: " + lat1 + ", Longitude: " + lng1 + "</em></p>");
 
             // }
         // });
