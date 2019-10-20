@@ -428,7 +428,7 @@ a {
 
   </script>
 <style>
-    body {
+    body{
         background-image: url(../View/Images/grass.svg);
         background-repeat: no-repeat;
         background-size: cover;
