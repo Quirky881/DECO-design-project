@@ -142,7 +142,7 @@ body {
                 <section class="teammember">
                     <div class="teamdescritption">
                         <div class="box">
-                            <img class="back" src="Images/title-page.svg" alt="project">
+                            <img class="back" src="Images/aboutus.svg" alt="project">
                             <img id="mates" src="Images/teamleader.png" alt="kieran">
                             <h2 class="name">Kieran Quirke-Brown</h2>
                             <p class="role">Team Leader/UI Designer</p>
@@ -155,7 +155,7 @@ body {
                     </div>
                     <div class="teamdescritption">
                         <div class="box">
-                            <img class="back" src="Images/title-page.svg" alt="project">
+                            <img class="back" src="Images/aboutus.svg" alt="project">
                             <img id="mates" src="Images/MarkBird.png" alt="mark">
                             <h2 class="name">Mark Bird</h2>
                             <p class="role">Database Designer/Coder</p>
@@ -168,7 +168,7 @@ body {
                     </div>
                     <div class="teamdescritption">
                         <div class="box">
-                            <img class="back" src="Images/title-page.svg" alt="project">
+                            <img class="back" src="Images/aboutus.svg" alt="project">
                             <img id="mates" src="Images/girl.jpg" alt="mengqi">
                             <h2 class="name">Mengqi Huang</h2>
                             <p class="role">Designer/Coder</p>
@@ -181,7 +181,7 @@ body {
                     </div>
                     <div class="teamdescritption">
                         <div class="box">
-                            <img class="back" src="Images/title-page.svg" alt="project">
+                            <img class="back" src="Images/aboutus.svg" alt="project">
                             <img id="mates" src="Images/me.jpg" alt="zengzhi">
                             <h2 class="name">Zhi Zeng</h2>
                             <p class="role">UI Designer/Coder</p>
