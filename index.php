@@ -41,7 +41,7 @@
                 <div class="row" style="min-height:10px; padding-bottom: 20px;">
                   <div class="col-1"></div>
                     <div class="col-5 text-center">
-                      <button type="submit" class="btn btn-primary" style="width: 100%;">Submit</button>
+                      <button type="submit" class="btn btn-primary" style="width: 100%;">Login!</button>
                     </div>
                   <div class="col-5 text-center">
                     <button type="submit" formaction="/Control/signupRedirect.php" class="btn btn-primary" style="width: 100%;">Sign Up</button>

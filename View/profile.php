@@ -16,15 +16,29 @@
                       <div class="form-item">
                           <label for="form-full-name">Name</label>
                           <div class="form-element">
-                              <input type="text" name="full_name" id="form-full-name" placeholder="Amy Flower" />
+                              <input type="text" name="full_name" id="form-full-name"
+                              <?php
+                                if ($row != "") {
+                                  echo 'value="' . $row["Username"] .'"';
+                                } else {
+                                  echo 'placeholder="Amy Flower"';
+                                }
+                              ?>/>
                           </div>
                       </div>
 
 
-                      <div class="form-item">
+                      <div class="form-item" style="margin-bottom: 6%;">
                           <label for="form-email">Email</label>
                           <div class="form-element">
-                              <input type="text" name="email" id="form-email" placeholder="amy.flower@gmail.com" />
+                              <input type="text" name="email" id="form-email"
+                              <?php
+                                if ($row != "") {
+                                  echo 'value="' . $row["Email"] .'"';
+                                } else {
+                                  echo 'placeholder="amy.flower@gmail.com"';
+                                }
+                              ?>/>
                           </div>
                       </div>
 
@@ -33,7 +47,14 @@
                       <div class="form-item">
                           <label for="form-email">Password</label>
                           <div class="form-element">
-                           <input type="password" name="pwd" placeholder="********"><br>
+                           <input type="password" name="pwd"
+                           <?php
+                             if ($row != "") {
+                               echo 'value="' . $row["password"] .'"';
+                             } else {
+                               echo 'placeholder="********"';
+                             }
+                           ?>/><br>
                           </div>
                       </div>
 
@@ -52,11 +73,14 @@
 
 
                       <div class="row" style="margin: 2%">
-                        <div class="col-12 d-flex justify-content-center">
+                        <div class="col-6 d-flex justify-content-center">
                           <button type="submit" class="btn btn-primary">Save</button>
                         </div>
+                        <div class="col-6 d-flex justify-content-center">
+                          <button type="submit" formaction="../Control/logout.php" class="btn btn-primary">logout</button>
+                        </div>
                       </div>
-                      
+
                   </fieldset>
                   <br>
               </form>
