@@ -256,12 +256,8 @@ Now, every time, just after it rains, you can see the Rainbow Serpent sharing hi
         </div>
 	  </div>
 	  <div class="col-1" id="exit" >
-		<div class="exitbutton">
-			<img src="../View/Images/closebutton.png" alt="close button" onclick="bookExit()"  style="z-index: 100;border-radius:100%; width:80%;cursor: pointer;">
-		</div>
-      <div id="point">
-        <img src="../View/Images/Pointing.gif" alt="pointing" style="width: 200%;float: right;margin: -30% 500% 0 0; z-index: 50;transform: scaleX(-1);">
-      </div>
+			<img src="../View/Images/closeButton.png" alt="close button" onclick="bookExit()">
+			<div id="point"><img src="../View/Images/Pointing.gif" alt="pointing" style="width: 15%;float: right;margin: 10% 0 0 0;"></div>
     </div>
 	</div>
     </div>
