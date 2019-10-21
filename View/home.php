@@ -239,33 +239,33 @@ a {
                     <li>
                         <a href="dictionary.php?Language=Yugara">
                             <div class="opt">
-                                <button class="option1" name="Butchulla">Butchulla word list</button>
+                                <button class="option1" name="Yugara">Yugara word list</button>
                             </div>
                         </a>
                     </li>
                     <li>
-                        <a href="dictionary.php?Language=Yugara">
+                        <a href="dictionary.php?Language=Yugambeh">
                             <div class="opt">
-                                <button class="option2" name="Duungidjawu">Duungidjawu word list</button>
+                                <button class="option2" name="Yugambeh">Yugambeh word list</button>
                             </div>
                         </a>
                     </li>
                     <li>
-                        <a href="dictionary.php?Language=Yugara">
+                        <a href="dictionary.php?Language=Yugarabul">
                             <div class="opt">
-                                <button class="option3" name="Gooreng">Gooreng word list</button>
+                                <button class="option3" name="Yugarabul">Yugarabul word list</button>
                             </div>
                         </a>
                     </li>
                     <li>
-                        <a href="dictionary.php?Language=Yugara">
+                        <a href="dictionary.php?Language=Turubul">
                             <div class="opt">
-                                <button class="option4" name="Gunggari">Gunggari word list</button>
+                                <button class="option4" name="Turubul">Turubul word list</button>
                             </div>
                         </a>
                     </li>
                     <li>
-                        <a href="dictionary.php?Language=Yugara">
+                        <a href="dictionary.php?Language=Kala-kawaw-ya">
                             <div class="opt">
                                 <button class="option5" name="Kala-kawaw-ya">Kala-kawaw-ya word list</button>
                             </div>
