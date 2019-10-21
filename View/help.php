@@ -148,7 +148,7 @@ body {
                             <p class="role">Team Leader/UI Designer</p>
                             <p class="description">I am currently studying a masters of information technology while working full time at Schneider Electric working as a smart services engineer. Based on my past university courses, university projects and work I believe my top skills that I bring to the project are: project management, front end programming and server side programming. I have little design experience and hope to build some skills in design by creating some of the pictures and graphics within our website.</p>
                             <blockquote>
-                                <p class="motto">"Php and coding are so easy." <br>---Kieran Quirke-Brown</p>
+                                <p class="motto">"Php and coding." <br>---Kieran Quirke-Brown</p>
                             </blockquote>
                             <button class="contact" href="#">Contact</button>
                         </div>
@@ -161,7 +161,7 @@ body {
                             <p class="role">Database Designer/Coder</p>
                             <p class="description">I am currently studying a masters of information technology, my background is in mathematics but I have also studies Databases, programing and some web development. I have limited design experience which I hope to expand upon but will be best utilized working on programing and database tasks.</p>
                             <blockquote>
-                                <p class="motto">"Database is so much fun." <br>---Mark Bird</p>
+                                <p class="motto">"love Databases hate CSS." <br>---Mark Bird</p>
                             </blockquote>
                             <button class="contact" href="#">Contact</button>
                         </div>
