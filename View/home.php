@@ -428,12 +428,12 @@ a {
 
   </script>
 <style>
-     /*
+     
     body{
         background-image: url(../View/Images/grass.svg);
         background-repeat: no-repeat;
         background-size: auto;
     }
-     */
+     
 </style>
 <?php include("footer.php"); ?>
